@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP I2C_HEADER
+D I2C Header with both 3.3V and 5V pins
+K i2c, connector, pins, header
+$ENDCMP
+#
+#End Doc Library

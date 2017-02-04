@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ic880a)(type KiCad)(uri "$(KIPRJMOD)/ic880a.pretty")(options "")(descr ""))
+)

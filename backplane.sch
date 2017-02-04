@@ -1,0 +1,569 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ic880a-spi
+LIBS:headers
+LIBS:backplane-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "iC880A-SPI Raspberry Pi Backplane"
+Date ""
+Rev "v1"
+Comp "Coredump Rapperswil"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L IC880A-SPI U2
+U 2 1 5895DD0B
+P 3550 2250
+F 0 "U2" H 3550 1650 60  0000 C CNN
+F 1 "IC880A-SPI" H 3550 2850 60  0000 C CNN
+F 2 "ic880a:IC880A-SPI" H 3550 2250 60  0001 C CNN
+F 3 "" H 3550 2250 60  0001 C CNN
+	2    3550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Raspberry_Pi_2_3 U1
+U 1 1 5895DDA9
+P 5050 4500
+F 0 "U1" H 5750 3250 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 4650 5400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 6050 5750 50  0001 C CNN
+F 3 "" H 5100 4350 50  0001 C CNN
+	1    5050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L IC880A-SPI U2
+U 1 1 5895DF62
+P 7700 3950
+F 0 "U2" H 7700 3350 60  0000 C CNN
+F 1 "IC880A-SPI" H 7700 4550 60  0000 C CNN
+F 2 "ic880a:IC880A-SPI" H 7700 3950 60  0001 C CNN
+F 3 "" H 7700 3950 60  0001 C CNN
+	1    7700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2C_HEADER J1
+U 1 1 5895E94C
+P 7350 2400
+F 0 "J1" H 7350 2050 60  0000 C CNN
+F 1 "I2C_HEADER" H 7350 2750 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 7350 2400 60  0001 C CNN
+F 3 "" H 7350 2400 60  0001 C CNN
+	1    7350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_Small D3
+U 1 1 5895F6EA
+P 1500 3100
+F 0 "D3" H 1450 3225 50  0000 L CNN
+F 1 "LED_Small" H 1325 3000 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 1500 3100 50  0001 C CNN
+F 3 "" V 1500 3100 50  0000 C CNN
+	1    1500 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D2
+U 1 1 5895F75F
+P 1200 3100
+F 0 "D2" H 1150 3225 50  0000 L CNN
+F 1 "LED_Small" H 1025 3000 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 1200 3100 50  0001 C CNN
+F 3 "" V 1200 3100 50  0000 C CNN
+	1    1200 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D1
+U 1 1 5895F789
+P 900 3100
+F 0 "D1" H 850 3225 50  0000 L CNN
+F 1 "LED_Small" H 725 3000 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 900 3100 50  0001 C CNN
+F 3 "" V 900 3100 50  0000 C CNN
+	1    900  3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GPS_HEADER J2
+U 1 1 58960C52
+P 10350 1400
+F 0 "J2" H 10350 1000 60  0000 C CNN
+F 1 "GPS_HEADER" H 10350 1800 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 10350 1450 60  0001 C CNN
+F 3 "" H 10350 1450 60  0001 C CNN
+	1    10350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SERIAL_HEADER J3
+U 1 1 58961502
+P 6700 5700
+F 0 "J3" H 6700 5500 60  0000 C CNN
+F 1 "SERIAL_HEADER" H 6700 5900 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6750 5700 60  0001 C CNN
+F 3 "" H 6750 5700 60  0001 C CNN
+	1    6700 5700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7000 3500
+NoConn ~ 7000 3800
+NoConn ~ 7000 4100
+NoConn ~ 7000 4200
+NoConn ~ 7000 4300
+NoConn ~ 7000 4400
+NoConn ~ 8400 4400
+NoConn ~ 8400 4300
+NoConn ~ 8400 3500
+NoConn ~ 8400 3600
+NoConn ~ 8400 3700
+NoConn ~ 4150 3900
+NoConn ~ 4150 4000
+NoConn ~ 4150 4100
+NoConn ~ 4150 4400
+NoConn ~ 4150 4500
+NoConn ~ 4150 4600
+NoConn ~ 4150 4800
+NoConn ~ 4150 4900
+NoConn ~ 4150 5200
+NoConn ~ 4150 5300
+NoConn ~ 5950 5000
+NoConn ~ 5950 4900
+NoConn ~ 5950 4300
+NoConn ~ 5950 3800
+$Comp
+L PWR_HEADER J4
+U 1 1 589627A5
+P 5650 1500
+F 0 "J4" H 5650 1300 60  0000 C CNN
+F 1 "PWR_HEADER" H 5650 1700 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5650 1500 60  0001 C CNN
+F 3 "" H 5650 1500 60  0001 C CNN
+	1    5650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 589642E4
+P 6850 3000
+F 0 "#FLG01" H 6850 3095 50  0001 C CNN
+F 1 "PWR_FLAG" H 6850 3180 50  0000 C CNN
+F 2 "" H 6850 3000 50  0000 C CNN
+F 3 "" H 6850 3000 50  0000 C CNN
+	1    6850 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L IC880A-SPI U2
+U 3 1 589605EF
+P 8450 1600
+F 0 "U2" H 8450 1000 60  0000 C CNN
+F 1 "IC880A-SPI" H 8450 2200 60  0000 C CNN
+F 2 "ic880a:IC880A-SPI" H 8450 1600 60  0001 C CNN
+F 3 "" H 8450 1600 60  0001 C CNN
+	3    8450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58964C66
+P 1500 2650
+F 0 "R3" V 1580 2650 50  0000 C CNN
+F 1 "R" V 1500 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1430 2650 50  0001 C CNN
+F 3 "" H 1500 2650 50  0000 C CNN
+	1    1500 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 58965066
+P 1200 2650
+F 0 "R2" V 1280 2650 50  0000 C CNN
+F 1 "R" V 1200 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1130 2650 50  0001 C CNN
+F 3 "" H 1200 2650 50  0000 C CNN
+	1    1200 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 589650B2
+P 900 2650
+F 0 "R1" V 980 2650 50  0000 C CNN
+F 1 "R" V 900 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 830 2650 50  0001 C CNN
+F 3 "" H 900 2650 50  0000 C CNN
+	1    900  2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q_NMOS_DGS Q1
+U 1 1 58965640
+P 2600 3400
+F 0 "Q1" H 2800 3450 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 2800 3350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2800 3500 50  0001 C CNN
+F 3 "" H 2600 3400 50  0000 C CNN
+	1    2600 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_DGS Q2
+U 1 1 58965993
+P 2600 3950
+F 0 "Q2" H 2800 4000 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 2800 3900 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2800 4050 50  0001 C CNN
+F 3 "" H 2600 3950 50  0000 C CNN
+	1    2600 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_DGS Q3
+U 1 1 589659ED
+P 2600 4500
+F 0 "Q3" H 2800 4550 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 2800 4450 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2800 4600 50  0001 C CNN
+F 3 "" H 2600 4500 50  0000 C CNN
+	1    2600 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58965F26
+P 2850 3600
+F 0 "#PWR02" H 2850 3350 50  0001 C CNN
+F 1 "GND" H 2850 3450 50  0000 C CNN
+F 2 "" H 2850 3600 50  0000 C CNN
+F 3 "" H 2850 3600 50  0000 C CNN
+	1    2850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58965F7C
+P 2850 4150
+F 0 "#PWR03" H 2850 3900 50  0001 C CNN
+F 1 "GND" H 2850 4000 50  0000 C CNN
+F 2 "" H 2850 4150 50  0000 C CNN
+F 3 "" H 2850 4150 50  0000 C CNN
+	1    2850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58965FBA
+P 2850 4700
+F 0 "#PWR04" H 2850 4450 50  0001 C CNN
+F 1 "GND" H 2850 4550 50  0000 C CNN
+F 2 "" H 2850 4700 50  0000 C CNN
+F 3 "" H 2850 4700 50  0000 C CNN
+	1    2850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 58968B52
+P 9650 1700
+F 0 "#FLG05" H 9650 1795 50  0001 C CNN
+F 1 "PWR_FLAG" H 9650 1880 50  0000 C CNN
+F 2 "" H 9650 1700 50  0000 C CNN
+F 3 "" H 9650 1700 50  0000 C CNN
+	1    9650 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 1550 4850 3200
+Wire Wire Line
+	4850 1800 4250 1800
+Wire Wire Line
+	4250 1900 4750 1900
+Wire Wire Line
+	4750 1450 4750 3000
+Wire Wire Line
+	4750 3000 3050 3000
+Wire Wire Line
+	3050 3000 3050 6100
+Wire Wire Line
+	3050 6100 5350 6100
+Wire Wire Line
+	4650 6100 4650 5800
+Wire Wire Line
+	8400 4100 8950 4100
+Wire Wire Line
+	8950 4100 8950 5200
+Wire Wire Line
+	8950 5200 6150 5200
+Wire Wire Line
+	6150 5200 6150 4700
+Wire Wire Line
+	6150 4700 5950 4700
+Wire Wire Line
+	8400 4000 8850 4000
+Wire Wire Line
+	8850 4000 8850 5100
+Wire Wire Line
+	8850 5100 6250 5100
+Wire Wire Line
+	6250 5100 6250 4500
+Wire Wire Line
+	6250 4500 5950 4500
+Wire Wire Line
+	5950 4600 6350 4600
+Wire Wire Line
+	6350 4600 6350 5000
+Wire Wire Line
+	6350 5000 8750 5000
+Wire Wire Line
+	8750 5000 8750 3800
+Wire Wire Line
+	8750 3800 8400 3800
+Wire Wire Line
+	5950 4400 6450 4400
+Wire Wire Line
+	6450 4400 6450 4900
+Wire Wire Line
+	6450 4900 8650 4900
+Wire Wire Line
+	8650 4900 8650 3900
+Wire Wire Line
+	8650 3900 8400 3900
+Wire Wire Line
+	4150 4700 3150 4700
+Wire Wire Line
+	3150 4700 3150 3200
+Wire Wire Line
+	3150 3200 6550 3200
+Wire Wire Line
+	6550 3200 6550 4800
+Wire Wire Line
+	6550 4800 8550 4800
+Wire Wire Line
+	8550 4800 8550 4200
+Wire Wire Line
+	8550 4200 8400 4200
+Wire Wire Line
+	5950 3600 6000 3600
+Wire Wire Line
+	6000 3600 6000 2200
+Wire Wire Line
+	6000 2200 7000 2200
+Wire Wire Line
+	7000 2300 6100 2300
+Wire Wire Line
+	6100 2300 6100 3700
+Wire Wire Line
+	6100 3700 5950 3700
+Wire Wire Line
+	7000 2400 4750 2400
+Connection ~ 4750 2400
+Wire Wire Line
+	4750 6100 4750 5800
+Connection ~ 4650 6100
+Wire Wire Line
+	4850 6100 4850 5800
+Connection ~ 4750 6100
+Wire Wire Line
+	4950 6100 4950 5800
+Connection ~ 4850 6100
+Wire Wire Line
+	5050 6100 5050 5800
+Connection ~ 4950 6100
+Wire Wire Line
+	5150 6100 5150 5800
+Connection ~ 5050 6100
+Wire Wire Line
+	5250 6100 5250 5800
+Connection ~ 5150 6100
+Wire Wire Line
+	5350 6100 5350 5800
+Connection ~ 5250 6100
+Wire Wire Line
+	7000 2500 5150 2500
+Wire Wire Line
+	5150 2500 5150 3200
+Wire Wire Line
+	7000 2600 4950 2600
+Wire Wire Line
+	4950 2600 4950 3200
+Wire Wire Line
+	9150 1150 9950 1150
+Wire Wire Line
+	9950 1250 9150 1250
+Wire Wire Line
+	9150 1350 9950 1350
+Wire Wire Line
+	9950 1450 9300 1450
+Wire Wire Line
+	9300 1450 9300 2800
+Wire Wire Line
+	9300 2800 5250 2800
+Wire Wire Line
+	5250 2800 5250 3200
+Wire Wire Line
+	9950 1550 9400 1550
+Wire Wire Line
+	9400 1550 9400 2900
+Wire Wire Line
+	9400 2900 4950 2900
+Connection ~ 4950 2900
+Wire Wire Line
+	9950 1650 9900 1650
+Wire Wire Line
+	9900 1650 9900 2000
+Wire Wire Line
+	9900 2000 10800 2000
+Wire Wire Line
+	10800 2000 10800 900 
+Wire Wire Line
+	10800 900  4400 900 
+Wire Wire Line
+	4400 900  4400 2000
+Wire Wire Line
+	4400 2000 4250 2000
+Wire Wire Line
+	5950 5200 6050 5200
+Wire Wire Line
+	6050 5200 6050 5650
+Wire Wire Line
+	6050 5650 6400 5650
+Wire Wire Line
+	5950 5300 5950 5750
+Wire Wire Line
+	5950 5750 6400 5750
+Wire Wire Line
+	5950 4000 6650 4000
+Wire Wire Line
+	6650 4000 6650 3700
+Wire Wire Line
+	6650 3700 7000 3700
+Wire Wire Line
+	7000 3900 6750 3900
+Wire Wire Line
+	6750 3900 6750 4100
+Wire Wire Line
+	6750 4100 5950 4100
+Wire Wire Line
+	4850 1550 5300 1550
+Connection ~ 4850 1800
+Wire Wire Line
+	4750 1450 5300 1450
+Connection ~ 4750 1900
+Wire Wire Line
+	6850 3000 6850 2900
+Connection ~ 6850 2900
+Wire Wire Line
+	4150 3800 3800 3800
+Wire Wire Line
+	3800 3800 3800 3400
+Wire Wire Line
+	3800 3400 2800 3400
+Wire Wire Line
+	4150 4200 3800 4200
+Wire Wire Line
+	3800 4200 3800 3950
+Wire Wire Line
+	3800 3950 2800 3950
+Wire Wire Line
+	2800 4500 3800 4500
+Wire Wire Line
+	3800 4500 3800 4300
+Wire Wire Line
+	3800 4300 4150 4300
+Wire Wire Line
+	2500 4700 2850 4700
+Wire Wire Line
+	5150 3100 2100 3100
+Connection ~ 5150 3100
+Wire Wire Line
+	900  2800 900  3000
+Wire Wire Line
+	1200 2800 1200 3000
+Wire Wire Line
+	1500 2800 1500 3000
+Wire Wire Line
+	2100 3100 2100 2350
+Wire Wire Line
+	2100 2350 900  2350
+Wire Wire Line
+	900  2350 900  2500
+Wire Wire Line
+	1200 2500 1200 2350
+Connection ~ 1200 2350
+Wire Wire Line
+	1500 2500 1500 2350
+Connection ~ 1500 2350
+Wire Wire Line
+	1500 3200 2500 3200
+Wire Wire Line
+	1200 3200 1200 3750
+Wire Wire Line
+	1200 3750 2500 3750
+Wire Wire Line
+	900  3200 900  4300
+Wire Wire Line
+	900  4300 2500 4300
+Connection ~ 2850 3600
+Connection ~ 2850 4150
+Wire Wire Line
+	9650 1700 9650 1350
+Connection ~ 9650 1350
+Wire Wire Line
+	2500 3600 2850 3600
+$Comp
+L GND #PWR06
+U 1 1 5896BA26
+P 4350 6200
+F 0 "#PWR06" H 4350 5950 50  0001 C CNN
+F 1 "GND" H 4350 6050 50  0000 C CNN
+F 2 "" H 4350 6200 50  0000 C CNN
+F 3 "" H 4350 6200 50  0000 C CNN
+	1    4350 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6200 4350 6100
+Connection ~ 4350 6100
+Wire Wire Line
+	2500 4150 2850 4150
+$EndSCHEMATC

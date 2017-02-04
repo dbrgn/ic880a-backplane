@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IC880A-SPI
+D WiMOD iC880A SPI LoRaWAN concentrator board
+K imst, wimod, lorawan, concentrator
+$ENDCMP
+#
+#End Doc Library

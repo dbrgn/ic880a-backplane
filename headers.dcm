@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GPS_HEADER
+D GPS Header
+K gps, header, pins
+$ENDCMP
+#
+$CMP I2C_HEADER
+D I2C Header
+K i2c, pinout, header, pins
+$ENDCMP
+#
+$CMP PWR_HEADER
+D Power Header
+K power, vcc, header, pins, pinout
+$ENDCMP
+#
+$CMP SERIAL_HEADER
+D Serial Header
+K serial, rs232, pinout, header, pins
+$ENDCMP
+#
+#End Doc Library
