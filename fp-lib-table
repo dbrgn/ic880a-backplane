@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name ic880a)(type KiCad)(uri "$(KIPRJMOD)/ic880a.pretty")(options "")(descr ""))
+  (lib (name oshw-logos)(type Legacy)(uri "$(KIPRJMOD)/oshw-logos.mod")(options "")(descr ""))
 )
