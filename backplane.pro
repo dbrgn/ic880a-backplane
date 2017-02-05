@@ -1,4 +1,4 @@
-update=Sat 04 Feb 2017 03:20:19 PM CET
+update=Sun 05 Feb 2017 09:51:24 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=ic880a-spi
 LibName31=headers
+LibName32=raspi
