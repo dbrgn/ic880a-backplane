@@ -9,5 +9,8 @@ give you the following additional features:
 - Separate pin header for power input (5V/GND)
 - Separate pin header for I²C based sensors (SDA/SCL/GND/3.3V/5V)
 - Separate pin header for serial communication (RX/TX)
+- Footprint for three general purpose SMD LEDs
+- Footprint for a [SHT21](https://sensirion.com/sht21/)
+  temperature/humidity sensor (SMD package)
 
 Work in progress.
