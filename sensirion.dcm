@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SHT21
+D Sensirion SHT21
+K sht21, sht, sensirion, humidity, temperature
+$ENDCMP
+#
+#End Doc Library
