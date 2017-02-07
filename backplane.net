@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /mnt/data/Projects/ic880a-sensor-backplane/backplane.sch)
-    (date "Mon 06 Feb 2017 06:49:15 PM CET")
+    (date "Tue 07 Feb 2017 08:58:19 PM CET")
     (tool "Eeschema 4.0.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -101,11 +101,13 @@
       (tstamp 589659ED))
     (comp (ref U3)
       (value SHT21)
+      (footprint sensirion:SHT21)
       (libsource (lib sensirion) (part SHT21))
       (sheetpath (names /) (tstamps /))
       (tstamp 5898B996))
     (comp (ref C1)
       (value C)
+      (footprint Capacitors_SMD:C_1206_HandSoldering)
       (datasheet https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf)
       (fields
         (field (name C) 100nF))
@@ -266,6 +268,7 @@
       (aliases
         (alias SHT21S)
         (alias SHT21P))
+      (description "Sensirion SHT21")
       (fields
         (field (name Reference) U)
         (field (name Value) SHT21))
@@ -277,18 +280,18 @@
         (pin (num 5) (name VDD) (type power_in))
         (pin (num 6) (name SCL) (type input)))))
   (libraries
-    (library (logical backplane-cache)
-      (uri /mnt/data/Projects/ic880a-sensor-backplane/backplane-cache.lib))
-    (library (logical headers)
-      (uri /mnt/data/Projects/ic880a-sensor-backplane/headers.lib))
     (library (logical raspi)
       (uri /mnt/data/Projects/ic880a-sensor-backplane/raspi.lib))
+    (library (logical ic880a-spi)
+      (uri /mnt/data/Projects/ic880a-sensor-backplane/ic880a-spi.lib))
+    (library (logical backplane-cache)
+      (uri /mnt/data/Projects/ic880a-sensor-backplane/backplane-cache.lib))
     (library (logical sensirion)
       (uri /home/danilo/Projects/ic880a-sensor-backplane/sensirion.lib))
+    (library (logical headers)
+      (uri /mnt/data/Projects/ic880a-sensor-backplane/headers.lib))
     (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
-    (library (logical ic880a-spi)
-      (uri /mnt/data/Projects/ic880a-sensor-backplane/ic880a-spi.lib)))
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name "Net-(Q2-Pad2)")
       (node (ref U1) (pin 38))

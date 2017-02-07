@@ -1,0 +1,3 @@
+[submodule "Capacitors_SMD.pretty"]
+	path = Capacitors_SMD.pretty
+	url = https://github.com/KiCad/Capacitors_SMD.pretty
