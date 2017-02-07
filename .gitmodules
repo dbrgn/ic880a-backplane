@@ -1,3 +1,6 @@
 [submodule "Capacitors_SMD.pretty"]
 	path = Capacitors_SMD.pretty
 	url = https://github.com/KiCad/Capacitors_SMD.pretty
+[submodule "Mounting_Holes.pretty"]
+	path = Mounting_Holes.pretty
+	url = https://github.com/KiCad/Mounting_Holes.pretty
