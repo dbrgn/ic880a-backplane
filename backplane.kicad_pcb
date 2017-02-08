@@ -2,10 +2,10 @@
 
   (general
     (links 56)
-    (no_connects 3)
+    (no_connects 0)
     (area 63.805999 51.613999 152.856001 135.584001)
     (thickness 1.6)
-    (drawings 75)
+    (drawings 76)
     (tracks 223)
     (zones 0)
     (modules 23)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (trace_clearance 0.2)
     (zone_clearance 0.381)
@@ -930,7 +930,7 @@
     )
   )
 
-  (module headers:header_1x2_unmarked (layer F.Cu) (tedit 589B7301) (tstamp 58961130)
+  (module headers:header_1x2_unmarked (layer F.Cu) (tedit 589B85DC) (tstamp 58961130)
     (at 71.185 124.685)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
@@ -938,7 +938,7 @@
     (fp_text reference J3 (at -0.0015 -2.4475) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SERIAL_HEADER (at -0.0015 5.0455) (layer F.SilkS)
+    (fp_text value SER (at -0.0015 5.0455) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.27 3.81) (end -1.27 -1.27) (layer F.SilkS) (width 0.2))
@@ -964,7 +964,7 @@
     )
   )
 
-  (module headers:header_1x5_unmarked (layer F.Cu) (tedit 589B72E1) (tstamp 58961120)
+  (module headers:header_1x5_unmarked (layer F.Cu) (tedit 589B85D6) (tstamp 58961120)
     (at 66.421 75.819)
     (descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x05 2.54mm single row")
@@ -972,7 +972,7 @@
     (fp_text reference J1 (at 0 -2.413) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value I2C_HEADER (at 0 12.6365) (layer F.SilkS)
+    (fp_text value I2C (at 0 12.6365) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.27 11.43) (end -1.27 -1.27) (layer F.SilkS) (width 0.2))
@@ -1004,7 +1004,7 @@
     )
   )
 
-  (module headers:header_1x2_marked (layer F.Cu) (tedit 589B75D5) (tstamp 58961136)
+  (module headers:header_1x2_marked (layer F.Cu) (tedit 589B85E1) (tstamp 58961136)
     (at 147.955 129.54 180)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
@@ -1012,7 +1012,7 @@
     (fp_text reference J4 (at 0.0275 4.953 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value PWR_HEADER (at 0.0275 -2.54 180) (layer F.SilkS)
+    (fp_text value PWR (at 0.0275 -2.54 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.27 3.81) (end -1.27 -1.27) (layer F.SilkS) (width 0.2))
@@ -1104,6 +1104,9 @@
     )
   )
 
+  (gr_text iC880A-SPI (at 72.535 58.825 270) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
   (gr_text 1 (at 135.382 124.714) (layer F.SilkS) (tstamp 589B83E1)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
