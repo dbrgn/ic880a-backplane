@@ -1,16 +1,24 @@
 # iC880A + Raspberry Pi Backplane
 
+
 This is a backplane to connect an iC880A-SPI concentrator board to a Raspberry
-Pi. It is similar to the [backplane by
+Pi. It is inspired by the [iC880A backplane by
 @gonzalocasas](https://github.com/gonzalocasas/ic880a-backplane), but aims to
 give you the following additional features:
 
-- Give you access to the full Raspberry Pi pinout
-- Separate pin header for power input (5V/GND)
-- Separate pin header for I²C based sensors (SDA/SCL/GND/3.3V/5V)
-- Separate pin header for serial communication (RX/TX)
+- Full access to Raspberry Pi GPIO header
+- Pin header for power input/output (5V/GND)
+- Pin header for I²C based sensors (SDA/SCL/GND/3.3V/5V)
+- Pin header for serial communication (RX/TX)
 - Footprint for three general purpose SMD LEDs
-- Footprint for a [SHT21](https://sensirion.com/sht21/)
-  temperature/humidity sensor (SMD package)
+- Footprint for a [SHT21](https://sensirion.com/sht21/) temperature/humidity
+  sensor (SMD package)
+- Mounting holes for Raspberry Pi B+ / 2B / 3B / Zero
 
-Work in progress.
+
+## License
+
+© 2017 Danilo Bargen. Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
+
+If you make any modification to this board, it would be great if you could let
+me know at mail@dbrgn.ch.
