@@ -86,7 +86,7 @@ U 1 1 5895E94C
 P 7350 2400
 F 0 "J1" H 7350 2050 60  0000 C CNN
 F 1 "I2C_HEADER" H 7350 2750 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 7350 2400 60  0001 C CNN
+F 2 "headers:header_1x5_unmarked" H 7350 2400 60  0001 C CNN
 F 3 "" H 7350 2400 60  0001 C CNN
 	1    7350 2400
 	1    0    0    -1  
@@ -130,7 +130,7 @@ U 1 1 58961502
 P 6700 5700
 F 0 "J3" H 6700 5500 60  0000 C CNN
 F 1 "SERIAL_HEADER" H 6700 5900 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6750 5700 60  0001 C CNN
+F 2 "headers:header_1x2_unmarked" H 6750 5700 60  0001 C CNN
 F 3 "" H 6750 5700 60  0001 C CNN
 	1    6700 5700
 	1    0    0    -1  
@@ -163,7 +163,7 @@ U 1 1 589627A5
 P 5650 1500
 F 0 "J4" H 5650 1300 60  0000 C CNN
 F 1 "PWR_HEADER" H 5650 1700 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5650 1500 60  0001 C CNN
+F 2 "headers:header_1x2_marked" H 5650 1500 60  0001 C CNN
 F 3 "" H 5650 1500 60  0001 C CNN
 	1    5650 1500
 	1    0    0    -1  
@@ -582,9 +582,9 @@ F 3 "" H 9300 1950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 2800 8350 2800
+	8350 2800 5250 2800
 Wire Wire Line
-	8350 2800 8350 1950
+	8350 1950 8350 2800
 Wire Wire Line
 	8350 1950 8800 1950
 Wire Wire Line
@@ -610,9 +610,9 @@ Wire Wire Line
 	8450 2100 8800 2100
 Connection ~ 6100 2900
 Wire Wire Line
-	6000 3000 9800 3000
+	9800 3000 6000 3000
 Wire Wire Line
-	9800 3000 9800 2100
+	9800 2100 9800 3000
 Connection ~ 6000 3000
 $Comp
 L C C1
@@ -620,7 +620,7 @@ U 1 1 5898C4BA
 P 9300 1350
 F 0 "C1" H 9300 1450 40  0000 L CNN
 F 1 "C" H 9306 1265 40  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9338 1200 30  0001 C CNN
+F 2 "Capacitors_SMD:C_1206" H 9338 1200 30  0001 C CNN
 F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf" H 9300 1350 60  0001 C CNN
 F 4 "100nF" V 9150 1350 60  0000 C CNN "C"
 	1    9300 1350
@@ -650,4 +650,44 @@ $EndComp
 Wire Wire Line
 	4900 1950 4850 1950
 Connection ~ 4850 1950
+$Comp
+L R R4
+U 1 1 589B82C4
+P 8750 2450
+F 0 "R4" V 8830 2450 40  0000 C CNN
+F 1 "R" V 8757 2451 40  0000 C CNN
+F 2 "Capacitors_SMD:C_1206" V 8680 2450 30  0001 C CNN
+F 3 "" H 8750 2450 30  0000 C CNN
+F 4 "10kΩ" V 8650 2450 60  0000 C CNN "R"
+	1    8750 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 589B831C
+P 8750 2750
+F 0 "R5" V 8830 2750 40  0000 C CNN
+F 1 "R" V 8757 2751 40  0000 C CNN
+F 2 "Capacitors_SMD:C_1206" V 8680 2750 30  0001 C CNN
+F 3 "" H 8750 2750 30  0000 C CNN
+F 4 "10kΩ" V 8650 2750 60  0000 C CNN "R"
+	1    8750 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 2450 8350 2450
+Connection ~ 8350 2450
+Wire Wire Line
+	8500 2750 8350 2750
+Connection ~ 8350 2750
+Wire Wire Line
+	8750 2100 8750 2300
+Wire Wire Line
+	8750 2300 9000 2300
+Wire Wire Line
+	9000 2300 9000 2450
+Connection ~ 8750 2100
+Wire Wire Line
+	9000 2750 9800 2750
+Connection ~ 9800 2750
 $EndSCHEMATC
