@@ -1,6 +1,5 @@
 # iC880A + Raspberry Pi Backplane
 
-
 This is a backplane to connect an iC880A-SPI concentrator board to a Raspberry
 Pi. It is inspired by the [iC880A backplane by
 @gonzalocasas](https://github.com/gonzalocasas/ic880a-backplane), but aims to
@@ -14,6 +13,11 @@ give you the following additional features:
 - Footprint for a [SHT21](https://sensirion.com/sht21/) temperature/humidity
   sensor (SMD package)
 - Mounting holes for Raspberry Pi B+ / 2B / 3B / Zero
+
+
+## Development
+
+This PCB was created using KiCad 4.
 
 
 ## License
