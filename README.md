@@ -14,10 +14,17 @@ give you the following additional features:
   sensor (SMD package)
 - Mounting holes for Raspberry Pi B+ / 2B / 3B / Zero
 
+![Rendered](rendered.png)
+
 
 ## Development
 
 This PCB was created using KiCad 4.
+
+Make sure that you clone all submodules:
+
+    git submodule init
+    git submodule update
 
 
 ## License

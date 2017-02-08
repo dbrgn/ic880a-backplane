@@ -246,7 +246,7 @@
       (net 12 GND))
     (pad 2 thru_hole oval (at 0 2.54 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 47 /5V))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x02_Pitch2.54mm.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x02.wrl
       (at (xyz 0 -0.05 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -453,6 +453,11 @@
       (net 50 "Net-(U2-Pad25)"))
     (pad 26 thru_hole circle (at 21.8 -30.65) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 51 "Net-(U2-Pad26)"))
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x20.wrl
+      (at (xyz 0 -1.205 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module LEDs:LED_1206 (layer F.Cu) (tedit 5898AFDF) (tstamp 5896110B)
@@ -889,7 +894,7 @@
       (net 12 GND))
     (pad 40 thru_hole oval (at 2.54 48.26 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 14 "Net-(Q3-Pad2)"))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x20_Pitch2.54mm.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_2x20.wrl
       (at (xyz 0.05 -0.95 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1004,6 +1009,11 @@
       (net 12 GND))
     (pad 2 smd rect (at 0 0) (size 2.4 1.5) (layers F.Cu F.Paste F.Mask)
       (net 12 GND))
+    (model Housings_DFN_QFN.3dshapes/DFN-6-1EP_3x3mm_Pitch0.95mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Mounting_Holes:MountingHole_2.7mm_M2.5 (layer F.Cu) (tedit 589A4A4A) (tstamp 589A4B6E)
@@ -1081,7 +1091,7 @@
       (net 9 "Net-(J3-Pad1)"))
     (pad 2 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 10 "Net-(J3-Pad2)"))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x02_Pitch2.54mm.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x02.wrl
       (at (xyz 0 -0.05 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1121,7 +1131,7 @@
       (net 46 /3.3V))
     (pad 5 thru_hole oval (at 0 10.16) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 47 /5V))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x05_Pitch2.54mm.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x05.wrl
       (at (xyz 0 -0.2 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1227,7 +1237,7 @@
       (net 46 /3.3V))
     (pad 5 thru_hole oval (at 0 10.16) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 47 /5V))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x05_Pitch2.54mm.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x05.wrl
       (at (xyz 0 -0.2 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
