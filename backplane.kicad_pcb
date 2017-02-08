@@ -773,11 +773,11 @@
   )
 
   (module oshw-logos:OSHW_MASK_7MM (layer F.Cu) (tedit 0) (tstamp 589A1E62)
-    (at 136.435 68.225 270)
-    (fp_text reference G*** (at 0 3.71094 270) (layer F.Mask) hide
+    (at 120.435 106.225 315)
+    (fp_text reference G*** (at 0 3.71094 315) (layer F.Mask) hide
       (effects (font (size 0.3175 0.3175) (thickness 0.0635)))
     )
-    (fp_text value LOGO (at 0 -3.71094 270) (layer F.Mask) hide
+    (fp_text value LOGO (at 0 -3.71094 315) (layer F.Mask) hide
       (effects (font (size 0.3175 0.3175) (thickness 0.0635)))
     )
     (fp_poly (pts (xy -2.1209 3.14452) (xy -2.08534 3.1242) (xy -2.00152 3.0734) (xy -1.88468 2.9972)
@@ -1271,10 +1271,10 @@
   (gr_line (start 149.479 107.569) (end 140.335 107.569) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 140.843 98.933) (end 140.335 98.933) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 149.479 98.933) (end 140.843 98.933) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text OSHW (at 131.5466 68.225 270) (layer F.Mask)
+  (gr_text OSHW (at 117.035 109.425 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "iC880A Backplane v1.0\ncoredump.ch / adnexo.ch 2017" (at 147.435 73.225 270) (layer F.Mask)
+  (gr_text "iC880A Backplane v1.0\ncoredump.ch / adnexo.ch 2017" (at 114.235 82.125 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 152.781 135.509) (end 150.876 135.509) (angle 90) (layer Edge.Cuts) (width 0.15))
