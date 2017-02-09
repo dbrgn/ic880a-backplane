@@ -458,6 +458,16 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x03.wrl
+      (at (xyz 0.75 1.205 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x03.wrl
+      (at (xyz -0.75 1.205 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module LEDs:LED_1206 (layer F.Cu) (tedit 5898AFDF) (tstamp 5896110B)
@@ -894,10 +904,15 @@
       (net 12 GND))
     (pad 40 thru_hole oval (at 2.54 48.26 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 14 "Net-(Q3-Pad2)"))
-    (model Socket_Strips.3dshapes/Socket_Strip_Straight_2x20.wrl
-      (at (xyz 0.05 -0.95 0))
+    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x20.wrl
+      (at (xyz 0.05 -0.95 -0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
+    )
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_2x20.wrl
+      (at (xyz 0.05 -0.95 -0.07000000000000001))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 90))
     )
   )
 
