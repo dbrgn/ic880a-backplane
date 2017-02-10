@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP FAN
+D DC 5V fan controlled by a MOSFET
+K power, vcc, header, pins, pinout
+$ENDCMP
+#
 $CMP GPS_HEADER
 D GPS Header
 K gps, header, pins
