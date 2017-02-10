@@ -5,4 +5,6 @@
   (lib (name sensirion)(type KiCad)(uri "$(KIPRJMOD)/sensirion.pretty")(options "")(descr ""))
   (lib (name Mounting_Holes)(type KiCad)(uri "$(KIPRJMOD)/Mounting_Holes.pretty")(options "")(descr ""))
   (lib (name headers)(type KiCad)(uri "$(KIPRJMOD)/headers.pretty")(options "")(descr ""))
+  (lib (name Diodes_THT)(type KiCad)(uri "$(KIPRJMOD)/Diodes_THT.pretty")(options "")(descr ""))
+  (lib (name TO_SOT_Packages_SMD)(type KiCad)(uri "$(KIPRJMOD)/TO_SOT_Packages_SMD.pretty")(options "")(descr ""))
 )

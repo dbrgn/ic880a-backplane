@@ -4,3 +4,9 @@
 [submodule "Mounting_Holes.pretty"]
 	path = Mounting_Holes.pretty
 	url = https://github.com/KiCad/Mounting_Holes.pretty
+[submodule "Diodes_THT.pretty"]
+	path = Diodes_THT.pretty
+	url = https://github.com/KiCad/Diodes_THT.pretty
+[submodule "TO_SOT_Packages_SMD.pretty"]
+	path = TO_SOT_Packages_SMD.pretty
+	url = https://github.com/KiCad/TO_SOT_Packages_SMD.pretty
