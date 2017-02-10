@@ -1367,8 +1367,8 @@
     (pad 2 thru_hole oval (at 7.62 0 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 53 "Net-(D4-Pad2)"))
     (model Diodes_ThroughHole.3dshapes/Diode_DO-35_SOD27_Horizontal_RM10.wrl
-      (at (xyz 0 0.25 0))
-      (scale (xyz 0.25 0.25 0.25))
+      (at (xyz 0.15 0 0))
+      (scale (xyz 0.28 0.28 0.28))
       (rotate (xyz 0 0 180))
     )
   )
