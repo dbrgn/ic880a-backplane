@@ -7,4 +7,7 @@
   (lib (name headers)(type KiCad)(uri "$(KIPRJMOD)/headers.pretty")(options "")(descr ""))
   (lib (name Diodes_THT)(type KiCad)(uri "$(KIPRJMOD)/Diodes_THT.pretty")(options "")(descr ""))
   (lib (name TO_SOT_Packages_SMD)(type KiCad)(uri "$(KIPRJMOD)/TO_SOT_Packages_SMD.pretty")(options "")(descr ""))
+  (lib (name regulators)(type KiCad)(uri "$(KIPRJMOD)/regulators.pretty")(options "")(descr ""))
+  (lib (name Connectors_Terminal_Blocks)(type KiCad)(uri "$(KIPRJMOD)/Connectors_Terminal_Blocks.pretty")(options "")(descr ""))
+  (lib (name Connectors)(type KiCad)(uri "$(KIPRJMOD)/Connectors.pretty")(options "")(descr ""))
 )

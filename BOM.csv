@@ -9,3 +9,6 @@ LEDs,SMD LED,3,,,1206,,,
 Sensor,SHT21 Sensor,1,Sensirion,,DNT,1649-1005-1-ND,7.68,
 ,Capacitor,1,,100nF,1206,,,
 ,Resistor,2,,10kΩ,1206,,,
+,,,,,,,,
+Regulator,MP1584 Step-Down Module,1,,,Custom,,1.25,10_1124
+,2 Pin Screw Terminal Block 2.54mm,1,,,,,0.70,9_410

@@ -32,6 +32,7 @@ LIBS:ic880a-spi
 LIBS:headers
 LIBS:raspi
 LIBS:sensirion
+LIBS:regulators
 LIBS:backplane-cache
 EELAYER 25 0
 EELAYER END
@@ -434,10 +435,10 @@ F 3 "" H 2300 1600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FAN J5
+L FAN J6
 U 1 1 589CB3DB
 P 1850 1050
-F 0 "J5" H 1850 850 60  0000 C CNN
+F 0 "J6" H 1850 850 60  0000 C CNN
 F 1 "FAN" H 1850 1250 60  0000 C CNN
 F 2 "headers:header_1x2_marked" H 1850 1050 60  0001 C CNN
 F 3 "" H 1850 1050 60  0001 C CNN
@@ -458,7 +459,7 @@ F 3 "" H 2500 1150 50  0000 C CNN
 $EndComp
 Connection ~ 2500 1000
 Wire Wire Line
-	2200 1000 4550 1000
+	2200 1000 6050 1000
 Connection ~ 2200 1300
 Wire Wire Line
 	2500 1300 2200 1300
@@ -786,7 +787,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 3000 2200 3000
 Wire Wire Line
-	4750 1450 4750 3000
+	4750 1200 4750 3000
 Wire Wire Line
 	4600 1900 4750 1900
 Wire Wire Line
@@ -800,4 +801,42 @@ Wire Wire Line
 Wire Wire Line
 	3900 4000 4150 4000
 NoConn ~ 4150 4100
+$Comp
+L MP1584_MODULE U4
+U 1 1 589F7FAA
+P 6500 1100
+F 0 "U4" H 6500 850 60  0000 C CNN
+F 1 "MP1584_MODULE" H 6500 1350 60  0000 C CNN
+F 2 "regulators:MP1584_MODULE" H 6500 1100 60  0001 C CNN
+F 3 "" H 6500 1100 60  0001 C CNN
+	1    6500 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 1000
+Wire Wire Line
+	6050 1200 4750 1200
+Connection ~ 4750 1450
+$Comp
+L PWR_HEADER J5
+U 1 1 589F8A2D
+P 7700 1050
+F 0 "J5" H 7700 850 60  0000 C CNN
+F 1 "PWR" H 7700 1250 60  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 7700 1050 60  0001 C CNN
+F 3 "" H 7700 1050 60  0001 C CNN
+	1    7700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1000 7150 1000
+Wire Wire Line
+	7150 1000 7150 1100
+Wire Wire Line
+	7150 1100 7350 1100
+Wire Wire Line
+	6950 1200 7200 1200
+Wire Wire Line
+	7200 1200 7200 1000
+Wire Wire Line
+	7200 1000 7350 1000
 $EndSCHEMATC
