@@ -161,7 +161,7 @@ U 1 1 589627A5
 P 5650 1500
 F 0 "J4" H 5650 1300 60  0000 C CNN
 F 1 "PWR" H 5650 1700 60  0000 C CNN
-F 2 "headers:header_1x2_marked" H 5650 1500 60  0001 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 5650 1500 60  0001 C CNN
 F 3 "" H 5650 1500 60  0001 C CNN
 	1    5650 1500
 	1    0    0    -1  
