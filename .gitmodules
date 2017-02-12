@@ -16,3 +16,6 @@
 [submodule "Connectors.pretty"]
 	path = Connectors.pretty
 	url = https://github.com/KiCad/Connectors.pretty
+[submodule "Capacitors_THT.pretty"]
+	path = Capacitors_THT.pretty
+	url = https://github.com/KiCad/Capacitors_THT.pretty
