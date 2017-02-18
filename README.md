@@ -27,11 +27,18 @@ Other
 - Footprint for three general purpose SMD LEDs
 - Mounting holes for Raspberry Pi B+ / 2B / 3B / Zero
 
+## PCB
+
 ![Rendered](rendered.png)
 
 ![Rendered](rendered-back.png)
 
 ![Rendered](rendered-components.png)
+
+
+## Schema
+
+See [schema.pdf](schema.pdf).
 
 
 ## Development
