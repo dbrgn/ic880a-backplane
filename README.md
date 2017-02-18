@@ -18,6 +18,8 @@ give you the following additional features:
 
 ![Rendered](rendered-back.png)
 
+![Rendered](rendered-components.png)
+
 
 ## Development
 
