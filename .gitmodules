@@ -19,3 +19,6 @@
 [submodule "Capacitors_THT.pretty"]
 	path = Capacitors_THT.pretty
 	url = https://github.com/KiCad/Capacitors_THT.pretty
+[submodule "Resistors_SMD.pretty"]
+	path = Resistors_SMD.pretty
+	url = https://github.com/KiCad/Resistors_SMD.pretty
