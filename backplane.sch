@@ -40,8 +40,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "iC880A-SPI Raspberry Pi Backplane"
-Date "2017-02-19"
-Rev "v1"
+Date "2017-03-14"
+Rev "v1.1"
 Comp "Coredump Rapperswil"
 Comment1 ""
 Comment2 ""
