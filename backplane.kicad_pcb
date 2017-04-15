@@ -2,8 +2,8 @@
 
   (general
     (links 109)
-    (no_connects 5)
-    (area 115.367999 70.028999 209.418001 153.999001)
+    (no_connects 4)
+    (area 101.473 58.674 214.503001 157.734001)
     (thickness 1.6)
     (drawings 94)
     (tracks 387)
@@ -44,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (trace_clearance 0.2)
     (zone_clearance 0.381)
@@ -1851,7 +1851,7 @@
   )
 
   (module Resistors_SMD:R_1206_HandSoldering (layer F.Cu) (tedit 58307C0D) (tstamp 58F2895C)
-    (at 183.134 106.172 270)
+    (at 183.134 106.267 270)
     (descr "Resistor SMD 1206, hand soldering")
     (tags "resistor 1206")
     (path /589B82C4)
@@ -1950,7 +1950,7 @@
   (gr_line (start 201.168 105.8545) (end 201.168 107.4355) (layer Edge.Cuts) (width 0.15) (tstamp 58A8B043))
   (gr_line (start 202.438 112.903) (end 202.438 115.754) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 201.168 112.903) (end 201.168 114.484) (layer Edge.Cuts) (width 0.15))
-  (gr_text C2 (at 171.7675 105.4735 360) (layer F.SilkS) (tstamp 58A0EC71)
+  (gr_text C2 (at 171.7675 105.4735) (layer F.SilkS) (tstamp 58A0EC71)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (gr_text "MP1584\nModule" (at 167.132 120.65) (layer F.SilkS)
