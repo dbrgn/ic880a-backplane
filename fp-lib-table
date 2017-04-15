@@ -13,4 +13,5 @@
   (lib (name capacitor-unmarked)(type KiCad)(uri "$(KIPRJMOD)/capacitor-unmarked.pretty")(options "")(descr ""))
   (lib (name Resistors_SMD)(type KiCad)(uri "$(KIPRJMOD)/Resistors_SMD.pretty")(options "")(descr ""))
   (lib (name DO214)(type KiCad)(uri "$(KIPRJMOD)/DO-214.pretty")(options "")(descr ""))
+  (lib (name StitchingVia)(type KiCad)(uri "$(KIPRJMOD)/StitchingVia.pretty")(options "")(descr ""))
 )
