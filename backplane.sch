@@ -861,9 +861,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 4350 2300 4350
 Wire Wire Line
-	2200 4350 2200 4450
-Wire Wire Line
-	2200 4450 2200 4500
+	2200 4350 2200 4500
 Connection ~ 9200 3850
 Wire Wire Line
 	9200 3800 9200 3850
@@ -872,30 +870,22 @@ Wire Wire Line
 	9200 3500 9200 3450
 Connection ~ 8950 3850
 Wire Wire Line
-	8950 3850 9200 3850
-Wire Wire Line
-	9200 3850 9450 3850
+	8950 3850 9450 3850
 Wire Wire Line
 	9450 3850 9450 3750
 Wire Wire Line
-	9550 3750 9450 3750
+	9450 3750 9550 3750
 Connection ~ 8950 3450
 Wire Wire Line
-	8950 3450 9200 3450
-Wire Wire Line
-	9200 3450 9450 3450
+	8950 3450 9450 3450
 Wire Wire Line
 	9450 3450 9450 3550
 Wire Wire Line
-	9550 3550 9450 3550
+	9450 3550 9550 3550
 Wire Wire Line
-	8950 3400 8950 3450
+	8950 3400 8950 3500
 Wire Wire Line
-	8950 3450 8950 3500
-Wire Wire Line
-	8950 3800 8950 3850
-Wire Wire Line
-	8950 3850 8950 3900
+	8950 3800 8950 3900
 Wire Wire Line
 	8950 4200 8950 4300
 Wire Wire Line
@@ -925,9 +915,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 1950 9700 1850
 Wire Wire Line
-	8200 1950 8300 1950
-Wire Wire Line
-	8300 1950 8650 1950
+	8200 1950 8650 1950
 Wire Wire Line
 	8500 1750 8650 1750
 Wire Wire Line
@@ -939,17 +927,11 @@ Wire Wire Line
 Wire Wire Line
 	1100 5650 1150 5650
 Wire Wire Line
-	1450 3150 2900 3150
+	1450 3150 3000 3150
 Wire Wire Line
-	2900 3150 3000 3150
+	1850 2650 3000 2650
 Wire Wire Line
-	1850 2650 2900 2650
-Wire Wire Line
-	2900 2650 3000 2650
-Wire Wire Line
-	2250 2150 2900 2150
-Wire Wire Line
-	2900 2150 3000 2150
+	2250 2150 3000 2150
 Wire Wire Line
 	1100 5100 1200 5100
 Wire Wire Line
@@ -957,9 +939,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 6500 3000 6500
 Wire Wire Line
-	5400 1500 5600 1500
-Wire Wire Line
-	5600 1500 5650 1500
+	5400 1500 5650 1500
 Connection ~ 2200 4450
 Wire Wire Line
 	2300 4450 2300 4500
@@ -980,9 +960,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 1500 7050 1550
 Wire Wire Line
-	6650 1500 6700 1500
-Wire Wire Line
-	6700 1500 7050 1500
+	6650 1500 7050 1500
 Wire Wire Line
 	6650 2100 6650 2050
 Wire Wire Line
@@ -992,19 +970,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 7400 1650 7500
 Wire Wire Line
-	1650 7400 1800 7400
-Wire Wire Line
-	1800 7400 1900 7400
-Wire Wire Line
-	1900 7400 2000 7400
-Wire Wire Line
-	2000 7400 2100 7400
-Wire Wire Line
-	2100 7400 2200 7400
-Wire Wire Line
-	2200 7400 2300 7400
-Wire Wire Line
-	2300 7400 2400 7400
+	1650 7400 2400 7400
 Connection ~ 1900 4450
 Wire Wire Line
 	2000 4450 1900 4450
@@ -1066,9 +1032,7 @@ Wire Wire Line
 	6150 6450 6050 6450
 Connection ~ 5350 4600
 Wire Wire Line
-	1900 4250 1900 4450
-Wire Wire Line
-	1900 4450 1900 4500
+	1900 4250 1900 4500
 Wire Wire Line
 	7900 1950 7900 1650
 Wire Wire Line
@@ -1095,9 +1059,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 5300 1200 5300
 Wire Wire Line
-	5200 4600 5350 4600
-Wire Wire Line
-	5350 4600 5450 4600
+	5200 4600 5450 4600
 Wire Wire Line
 	5350 4700 5200 4700
 Wire Wire Line
@@ -1135,11 +1097,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 1450 1950 1650
 Wire Wire Line
-	1150 1000 1550 1000
-Wire Wire Line
-	1550 1000 1950 1000
-Wire Wire Line
-	1950 1000 2450 1000
+	1150 1000 2450 1000
 Wire Wire Line
 	1150 1000 1150 1150
 Wire Wire Line
@@ -1173,13 +1131,9 @@ Wire Wire Line
 	5600 1000 5600 1500
 Connection ~ 5600 1500
 Wire Wire Line
-	9650 5250 9650 5450
+	9650 5250 9650 5550
 Wire Wire Line
-	9650 5450 9650 5550
-Wire Wire Line
-	9950 5750 10050 5750
-Wire Wire Line
-	10050 5750 10250 5750
+	9950 5750 10250 5750
 Wire Wire Line
 	9950 5450 9650 5450
 Connection ~ 9650 5450
@@ -1210,13 +1164,9 @@ Wire Wire Line
 	2900 3350 2900 3150
 Connection ~ 2900 3150
 Wire Wire Line
-	9650 5150 9950 5150
+	9650 5150 10350 5150
 Wire Wire Line
-	9950 5150 10350 5150
-Wire Wire Line
-	7900 1650 8300 1650
-Wire Wire Line
-	8300 1650 8500 1650
+	7900 1650 8500 1650
 Text Notes 7500 3600 0    60   ~ 0
 This is a 16-Bit\nAnalog-to-Digital\nConverter that is\nwired up to\nmeasure the\nRaspberry Pi\nsupply voltage.
 Text Notes 7550 1400 0    60   ~ 0
