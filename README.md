@@ -20,11 +20,13 @@ Sensors
 
 - Footprint for a [SHT21](https://sensirion.com/sht21/) temperature/humidity
   sensor (SMD package)
+- Footprint for an MCP3425 ADC to measure RPi supply voltage
 
 Other
 
 - Pin header with flyback diode for 5V fan (5V/GND)
-- Footprint for three general purpose SMD LEDs
+- Footprint for three general purpose SMD LEDs (Note: Only usable with 40-pin
+  GPIO header)
 - Mounting holes for Raspberry Pi B+ / 2B / 3B / Zero
 
 ## PCB
