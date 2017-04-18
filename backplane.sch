@@ -1180,15 +1180,15 @@ Wire Notes Line
 Text Notes 7500 5000 0    157  ~ 0
 Button
 Text Notes 7500 5900 0    60   ~ 0
-A simple button\nconnected to GPIO12.\nIt could be programmed\nto shut down the Rpi\non button press.\n\nNote tha you need to\nenable the internal pull-up\nfor the button to work.
+A simple button\nconnected to GPIO12.\nIt could be programmed\nto shut down the Rpi\non button press.\n\nNote that you need to\nenable the internal pull-up\nfor the button to work.
 $Comp
 L SW_Push SW1
 U 1 1 58F31B3A
 P 8200 6200
 F 0 "SW1" H 8250 6300 50  0000 L CNN
 F 1 "SW_Push" H 8200 6140 50  0000 C CNN
-F 2 "" H 8200 6400 50  0000 C CNN
-F 3 "" H 8200 6400 50  0000 C CNN
+F 2 "buttons:SW_Mikroshop" H 8200 6400 50  0001 C CNN
+F 3 "http://mikroshop.ch/inside.html?gruppe=10&artikel=539" H 8200 6400 50  0001 C CNN
 	1    8200 6200
 	1    0    0    -1  
 $EndComp

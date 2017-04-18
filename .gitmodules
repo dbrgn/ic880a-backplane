@@ -19,6 +19,3 @@
 [submodule "Resistors_SMD.pretty"]
 	path = Resistors_SMD.pretty
 	url = https://github.com/KiCad/Resistors_SMD.pretty
-[submodule "Buttons_Switches_SMD.pretty"]
-	path = Buttons_Switches_SMD.pretty
-	url = https://github.com/KiCad/Buttons_Switches_SMD.pretty
