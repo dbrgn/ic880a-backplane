@@ -31,16 +31,14 @@ Other
 
 ## PCB
 
-![Rendered](rendered.png)
+![Rendered](rendered-v1.1/top.png)
 
-![Rendered](rendered-back.png)
-
-![Rendered](rendered-components.png)
+![Rendered](rendered-v1.1/bottom.png)
 
 
-## Schema
+## Schematics
 
-See [schema.pdf](schema.pdf).
+See [schematics-v1.1.pdf](schematics-v1.1.pdf).
 
 
 ## Development
