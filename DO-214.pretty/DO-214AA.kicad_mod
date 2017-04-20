@@ -1,4 +1,4 @@
-(module DO-214AC (layer F.Cu) (tedit 58F8FD36)
+(module DO-214AA (layer F.Cu) (tedit 58F8FEA3)
   (fp_text reference D4 (at 3.048 -2.413) (layer F.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.15)))
   )
@@ -10,8 +10,8 @@
   (fp_line (start -0.8382 -1.39954) (end -0.8382 1.34874) (layer F.SilkS) (width 0.381))
   (fp_line (start 2.30124 -1.39954) (end -2.30124 -1.39954) (layer F.SilkS) (width 0.381))
   (fp_line (start -2.30124 1.39954) (end 2.30124 1.39954) (layer F.SilkS) (width 0.381))
-  (pad 1 smd rect (at -2.19964 0) (size 2.10058 1.80086) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 2.19964 0) (size 2.10058 1.80086) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at -2.1395 0) (size 2.12 2.18) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd rect (at 2.1395 0) (size 2.12 2.18) (layers F.Cu F.Paste F.Mask))
   (model /home/danilo/Projects/ic880a-sensor-backplane/DO-214.3d/AB2_DO-214AC.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.3937 0.3937 0.3937))

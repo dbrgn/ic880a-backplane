@@ -194,7 +194,7 @@ U 1 1 58965640
 P 2050 2150
 F 0 "Q3" V 2250 2200 50  0000 L CNN
 F 1 "Q_NMOS_GSD" V 2350 1850 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2250 2250 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2250 2250 50  0001 C CNN
 F 3 "" H 2050 2150 50  0000 C CNN
 	1    2050 2150
 	-1   0    0    -1  
@@ -205,7 +205,7 @@ U 1 1 58965993
 P 1650 2650
 F 0 "Q2" V 1850 2700 50  0000 L CNN
 F 1 "Q_NMOS_GSD" V 1950 2350 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 1850 2750 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1850 2750 50  0001 C CNN
 F 3 "" H 1650 2650 50  0000 C CNN
 	1    1650 2650
 	-1   0    0    -1  
@@ -216,7 +216,7 @@ U 1 1 589659ED
 P 1250 3150
 F 0 "Q1" V 1450 3200 50  0000 L CNN
 F 1 "Q_NMOS_GSD" V 1550 2850 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 1450 3250 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1450 3250 50  0001 C CNN
 F 3 "" H 1250 3150 50  0000 C CNN
 	1    1250 3150
 	-1   0    0    -1  
@@ -388,7 +388,7 @@ U 1 1 589CAA83
 P 9750 6000
 F 0 "Q4" H 9950 6050 50  0000 L CNN
 F 1 "Q_NMOS_GSD" H 9950 5950 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 9950 6100 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9950 6100 50  0001 C CNN
 F 3 "" H 9750 6000 50  0000 C CNN
 	1    9750 6000
 	-1   0    0    -1  
@@ -420,35 +420,35 @@ NoConn ~ 1200 5400
 $Comp
 L MP1584_MODULE U4
 U 1 1 589F7FAA
-P 9900 1100
-F 0 "U4" H 9900 850 60  0000 C CNN
-F 1 "MP1584_MODULE" H 9900 1350 60  0000 C CNN
-F 2 "regulators:MP1584_MODULE" H 9900 1100 60  0001 C CNN
-F 3 "" H 9900 1100 60  0001 C CNN
-	1    9900 1100
-	-1   0    0    -1  
+P 8700 1200
+F 0 "U4" H 8700 950 60  0000 C CNN
+F 1 "MP1584_MODULE" H 8700 1500 60  0000 C CNN
+F 2 "regulators:MP1584_MODULE" H 8700 1200 60  0001 C CNN
+F 3 "" H 8700 1200 60  0001 C CNN
+	1    8700 1200
+	1    0    0    1   
 $EndComp
 $Comp
 L PWR_HEADER J5
 U 1 1 589F8A2D
-P 10950 1050
-F 0 "J5" H 10950 850 60  0000 C CNN
-F 1 "PWR" H 10950 1250 60  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 10950 1050 60  0001 C CNN
-F 3 "" H 10950 1050 60  0001 C CNN
-	1    10950 1050
-	1    0    0    -1  
+P 7750 1150
+F 0 "J5" H 7750 950 60  0000 C CNN
+F 1 "PWR" H 7750 1350 60  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 7750 1150 60  0001 C CNN
+F 3 "" H 7750 1150 60  0001 C CNN
+	1    7750 1150
+	-1   0    0    1   
 $EndComp
 $Comp
 L C C2
 U 1 1 58A06EA9
-P 9200 1050
-F 0 "C2" H 9225 1150 50  0000 L CNN
-F 1 "C" H 9225 950 50  0000 L CNN
-F 2 "capacitor-unmarked:CAP_UNMARKED" H 9238 900 50  0001 C CNN
-F 3 "" H 9200 1050 50  0000 C CNN
-	1    9200 1050
-	1    0    0    -1  
+P 9450 1300
+F 0 "C2" H 9475 1400 50  0000 L CNN
+F 1 "C" H 9475 1200 50  0000 L CNN
+F 2 "capacitor-unmarked:CAP_UNMARKED" H 9488 1150 50  0001 C CNN
+F 3 "" H 9450 1300 50  0000 C CNN
+	1    9450 1300
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R8
@@ -544,7 +544,7 @@ F 3 "" H 10600 6200 50  0000 C CNN
 $EndComp
 Text GLabel 10350 5450 2    60   Input ~ 0
 5V
-Text GLabel 8000 1800 0    60   Input ~ 0
+Text GLabel 10900 1700 2    60   Input ~ 0
 5V
 Text GLabel 5450 4600 2    60   Input ~ 0
 5V
@@ -560,47 +560,25 @@ F 3 "" H 9650 6200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
-U 1 1 58F163DE
-P 8950 1200
-F 0 "#PWR014" H 8950 950 50  0001 C CNN
-F 1 "GND" H 8950 1050 50  0000 C CNN
-F 2 "" H 8950 1200 50  0000 C CNN
-F 3 "" H 8950 1200 50  0000 C CNN
-	1    8950 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L PWR_HEADER J4
 U 1 1 589627A5
-P 10950 1750
-F 0 "J4" H 10950 1550 60  0000 C CNN
-F 1 "PWR" H 10950 1950 60  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 10950 1750 60  0001 C CNN
-F 3 "" H 10950 1750 60  0001 C CNN
-	1    10950 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR015
-U 1 1 58F16888
-P 10200 1550
-F 0 "#PWR015" H 10200 1300 50  0001 C CNN
-F 1 "GND" H 10200 1400 50  0000 C CNN
-F 2 "" H 10200 1550 50  0000 C CNN
-F 3 "" H 10200 1550 50  0000 C CNN
-	1    10200 1550
-	1    0    0    -1  
+P 7750 1750
+F 0 "J4" H 7750 1550 60  0000 C CNN
+F 1 "PWR" H 7750 1950 60  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 7750 1750 60  0001 C CNN
+F 3 "" H 7750 1750 60  0001 C CNN
+	1    7750 1750
+	-1   0    0    1   
 $EndComp
 Text GLabel 10250 5900 2    60   Input ~ 0
 FAN
 Text GLabel 1100 5300 0    60   Input ~ 0
 FAN
 $Comp
-L GND #PWR016
+L GND #PWR014
 U 1 1 58F17ECB
 P 5350 4700
-F 0 "#PWR016" H 5350 4450 50  0001 C CNN
+F 0 "#PWR014" H 5350 4450 50  0001 C CNN
 F 1 "GND" H 5350 4550 50  0000 C CNN
 F 2 "" H 5350 4700 50  0000 C CNN
 F 3 "" H 5350 4700 50  0000 C CNN
@@ -610,10 +588,10 @@ $EndComp
 Text GLabel 1950 4250 2    60   Input ~ 0
 5V
 $Comp
-L PWR_FLAG #FLG017
+L PWR_FLAG #FLG015
 U 1 1 58F18E09
 P 5350 4600
-F 0 "#FLG017" H 5350 4695 50  0001 C CNN
+F 0 "#FLG015" H 5350 4695 50  0001 C CNN
 F 1 "PWR_FLAG" H 5350 4780 50  0000 C CNN
 F 2 "" H 5350 4600 50  0000 C CNN
 F 3 "" H 5350 4600 50  0000 C CNN
@@ -655,10 +633,10 @@ Text GLabel 5700 3500 0    60   Input ~ 0
 Text GLabel 5750 3100 0    60   Input ~ 0
 SDA
 $Comp
-L GND #PWR018
+L GND #PWR016
 U 1 1 58F1F392
 P 5600 3250
-F 0 "#PWR018" H 5600 3000 50  0001 C CNN
+F 0 "#PWR016" H 5600 3000 50  0001 C CNN
 F 1 "GND" H 5600 3100 50  0000 C CNN
 F 2 "" H 5600 3250 50  0000 C CNN
 F 3 "" H 5600 3250 50  0000 C CNN
@@ -674,10 +652,10 @@ Text GLabel 4700 3400 0    60   Input ~ 0
 Text GLabel 4450 3100 0    60   Input ~ 0
 SDA
 $Comp
-L GND #PWR019
+L GND #PWR017
 U 1 1 58F20596
 P 4300 3250
-F 0 "#PWR019" H 4300 3000 50  0001 C CNN
+F 0 "#PWR017" H 4300 3000 50  0001 C CNN
 F 1 "GND" H 4300 3100 50  0000 C CNN
 F 2 "" H 4300 3250 50  0000 C CNN
 F 3 "" H 4300 3250 50  0000 C CNN
@@ -693,10 +671,10 @@ SDA
 Text GLabel 6650 2100 3    60   Input ~ 0
 3.3V
 $Comp
-L GND #PWR020
+L GND #PWR018
 U 1 1 58F2395B
 P 7050 1550
-F 0 "#PWR020" H 7050 1300 50  0001 C CNN
+F 0 "#PWR018" H 7050 1300 50  0001 C CNN
 F 1 "GND" H 7050 1400 50  0000 C CNN
 F 2 "" H 7050 1550 50  0000 C CNN
 F 3 "" H 7050 1550 50  0000 C CNN
@@ -739,10 +717,10 @@ F 3 "" H 10050 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L GND #PWR019
 U 1 1 58F1498B
 P 10050 4100
-F 0 "#PWR021" H 10050 3850 50  0001 C CNN
+F 0 "#PWR019" H 10050 3850 50  0001 C CNN
 F 1 "GND" H 10050 3950 50  0000 C CNN
 F 2 "" H 10050 4100 50  0000 C CNN
 F 3 "" H 10050 4100 50  0000 C CNN
@@ -792,10 +770,10 @@ F 4 "470Ω" V 8850 4050 60  0000 C CNN "R"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L GND #PWR020
 U 1 1 58F15D89
 P 8950 4300
-F 0 "#PWR022" H 8950 4050 50  0001 C CNN
+F 0 "#PWR020" H 8950 4050 50  0001 C CNN
 F 1 "GND" H 8950 4150 50  0000 C CNN
 F 2 "" H 8950 4300 50  0000 C CNN
 F 3 "" H 8950 4300 50  0000 C CNN
@@ -828,12 +806,119 @@ Text Notes 4150 2850 0    157  ~ 0
 I²C Breakouts
 Text Notes 7500 750  0    157  ~ 0
 Power
-Text Notes 7500 2800 0    157  ~ 0
+Text Notes 7450 3150 0    157  ~ 0
 ADC
 Text Notes 9000 5000 0    157  ~ 0
 DC Fan
 Text Notes 9000 5250 0    60   ~ 0
 Connector for a 5V DC\nfan with a flyback diode.
+Text Notes 7450 3950 0    60   ~ 0
+This is a 16-Bit\nAnalog-to-Digital\nConverter that is\nwired up to\nmeasure the\nRaspberry Pi\nsupply voltage.
+Text Notes 11050 1200 2    60   ~ 0
+The board includes a 5V\npower input/output\nconnector as well as a\nMP1584 step-down\nvoltage regulator for\n6.7-28V input.
+Text Notes 3750 1800 0    60   ~ 0
+The Sensirion SHT21 sensor\nmeasures both temperature\nand humidity.\n\nTemperature\nmeasurements\nare accurate to\n±0.3°C, humidity is\naccurate to ±2%RH.
+Text Notes 7500 5000 0    157  ~ 0
+Button
+Text Notes 7500 5900 0    60   ~ 0
+A simple button\nconnected to GPIO12.\nIt could be programmed\nto shut down the Rpi\non button press.\n\nNote that you need to\nenable the internal pull-up\nfor the button to work.
+$Comp
+L SW_Push SW1
+U 1 1 58F31B3A
+P 8200 6200
+F 0 "SW1" H 8250 6300 50  0000 L CNN
+F 1 "SW_Push" H 8200 6140 50  0000 C CNN
+F 2 "buttons:SW_Mikroshop" H 8200 6400 50  0001 C CNN
+F 3 "http://mikroshop.ch/inside.html?gruppe=10&artikel=539" H 8200 6400 50  0001 C CNN
+	1    8200 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 6200 2    60   Input ~ 0
+BTN
+Text GLabel 7950 6200 0    60   Input ~ 0
+BTN
+$Comp
+L GND #PWR021
+U 1 1 58F33326
+P 8500 6250
+F 0 "#PWR021" H 8500 6000 50  0001 C CNN
+F 1 "GND" H 8500 6100 50  0000 C CNN
+F 2 "" H 8500 6250 50  0000 C CNN
+F 3 "" H 8500 6250 50  0000 C CNN
+	1    8500 6250
+	1    0    0    -1  
+$EndComp
+Text Notes 7500 2650 0    60   ~ 0
+Additionally, the parts are\nprotected against voltage spikes\nby a resettable fuse and a\nTVS diode, and against reverse\npolarity by a MOSFET.
+$Comp
+L D_Zener_Small D5
+U 1 1 58F8FE37
+P 10800 2050
+F 0 "D5" H 10800 2140 50  0000 C CNN
+F 1 "D_TVS" H 10800 1960 50  0000 C CNN
+F 2 "DO214:DO-214AA" V 10800 2050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88392/smbj50a.pdf" V 10800 2050 50  0001 C CNN
+F 4 "SMBJ5.0A-E3/5BGICT-ND" H 10800 2050 60  0001 C CNN "Digikey"
+	1    10800 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F1
+U 1 1 58F913C4
+P 10000 1700
+F 0 "F1" V 9900 1700 50  0000 C CNN
+F 1 "Polyfuse" V 10100 1700 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1812" H 10050 1500 50  0001 L CNN
+F 3 "" H 10000 1700 50  0001 C CNN
+F 4 "MF-MSMF250/16X-2CT-ND" V 10000 1700 60  0001 C CNN "Digikey"
+	1    10000 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D6
+U 1 1 58F9565C
+P 8700 750
+F 0 "D6" H 8550 700 50  0000 C CNN
+F 1 "D" H 8800 700 50  0000 C CNN
+F 2 "DO214:DO-214AC" H 8700 750 50  0001 C CNN
+F 3 "" H 8700 750 50  0000 C CNN
+	1    8700 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q5
+U 1 1 58F98D63
+P 10400 1800
+F 0 "Q5" V 10300 1850 50  0000 L CNN
+F 1 "Q_PMOS_GSD" V 10700 1550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 10600 1900 50  0001 C CNN
+F 3 "" H 10400 1800 50  0001 C CNN
+	1    10400 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R13
+U 1 1 58F9A035
+P 10400 2150
+F 0 "R13" V 10480 2150 40  0000 C CNN
+F 1 "R" V 10400 2150 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 10330 2150 30  0001 C CNN
+F 3 "" H 10400 2150 30  0000 C CNN
+F 4 "10kΩ" V 10300 2150 60  0000 C CNN "R"
+	1    10400 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 58FA03BA
+P 10950 2500
+F 0 "#PWR022" H 10950 2250 50  0001 C CNN
+F 1 "GND" H 10950 2350 50  0000 C CNN
+F 2 "" H 10950 2500 50  0001 C CNN
+F 3 "" H 10950 2500 50  0001 C CNN
+	1    10950 2500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	6500 6700 6550 6700
 Wire Wire Line
@@ -842,10 +927,6 @@ Wire Wire Line
 	6050 6750 6500 6750
 Wire Notes Line
 	7400 4750 11200 4750
-Wire Notes Line
-	11200 2500 11200 2550
-Wire Notes Line
-	3600 2500 11200 2500
 Wire Notes Line
 	7400 500  7400 6500
 Wire Notes Line
@@ -906,14 +987,6 @@ Wire Wire Line
 	10550 3550 10600 3550
 Wire Wire Line
 	10050 4050 10050 4100
-Wire Wire Line
-	10600 1000 10350 1000
-Wire Wire Line
-	10500 1100 10600 1100
-Wire Wire Line
-	10500 1200 10500 1100
-Wire Wire Line
-	9400 1000 9450 1000
 Wire Wire Line
 	1200 5500 1100 5500
 Wire Wire Line
@@ -1030,18 +1103,10 @@ Connection ~ 5350 4600
 Wire Wire Line
 	1900 4250 1900 4500
 Wire Wire Line
-	8950 1200 8950 900 
-Connection ~ 9200 900 
-Connection ~ 9200 1200
-Wire Wire Line
 	1950 1950 1950 1850
 Wire Wire Line
 	1950 1000 1950 1150
 Connection ~ 10050 6000
-Wire Wire Line
-	9400 900  9400 1000
-Wire Wire Line
-	10500 1200 10350 1200
 Wire Wire Line
 	1100 5300 1200 5300
 Wire Wire Line
@@ -1150,14 +1215,6 @@ Connection ~ 2900 3150
 Wire Wire Line
 	9650 5450 10350 5450
 Wire Wire Line
-	8950 900  9400 900 
-Text Notes 7500 3600 0    60   ~ 0
-This is a 16-Bit\nAnalog-to-Digital\nConverter that is\nwired up to\nmeasure the\nRaspberry Pi\nsupply voltage.
-Text Notes 7500 1400 0    60   ~ 0
-The board includes a 5V\npower input/output\nconnector as well as a\nMP1584 step-down\nvoltage regulator for\n6.7-28V input.
-Text Notes 3750 1800 0    60   ~ 0
-The Sensirion SHT21 sensor\nmeasures both temperature\nand humidity.\n\nTemperature\nmeasurements\nare accurate to\n±0.3°C, humidity is\naccurate to ±2%RH.
-Wire Wire Line
 	10050 6200 10200 6200
 Wire Wire Line
 	10500 6200 10600 6200
@@ -1169,101 +1226,73 @@ Wire Wire Line
 	10050 5900 10250 5900
 Wire Notes Line
 	8900 4750 8900 6500
-Text Notes 7500 5000 0    157  ~ 0
-Button
-Text Notes 7500 5900 0    60   ~ 0
-A simple button\nconnected to GPIO12.\nIt could be programmed\nto shut down the Rpi\non button press.\n\nNote that you need to\nenable the internal pull-up\nfor the button to work.
-$Comp
-L SW_Push SW1
-U 1 1 58F31B3A
-P 8200 6200
-F 0 "SW1" H 8250 6300 50  0000 L CNN
-F 1 "SW_Push" H 8200 6140 50  0000 C CNN
-F 2 "buttons:SW_Mikroshop" H 8200 6400 50  0001 C CNN
-F 3 "http://mikroshop.ch/inside.html?gruppe=10&artikel=539" H 8200 6400 50  0001 C CNN
-	1    8200 6200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3000 6200 3100 6200
-Text GLabel 3100 6200 2    60   Input ~ 0
-BTN
-Text GLabel 7950 6200 0    60   Input ~ 0
-BTN
 Wire Wire Line
 	7950 6200 8000 6200
 Wire Wire Line
 	8400 6200 8500 6200
 Wire Wire Line
 	8500 6200 8500 6250
-$Comp
-L GND #PWR023
-U 1 1 58F33326
-P 8500 6250
-F 0 "#PWR023" H 8500 6000 50  0001 C CNN
-F 1 "GND" H 8500 6100 50  0000 C CNN
-F 2 "" H 8500 6250 50  0000 C CNN
-F 3 "" H 8500 6250 50  0000 C CNN
-	1    8500 6250
-	1    0    0    -1  
-$EndComp
-Text Notes 11100 2350 2    60   ~ 0
-Additionally, the Raspberry Pi is protected\nby a resettable fuse and a TVS diode.
-$Comp
-L D_Zener_Small D5
-U 1 1 58F8FE37
-P 8200 2000
-F 0 "D5" H 8200 2090 50  0000 C CNN
-F 1 "D_TVS" H 8200 1910 50  0000 C CNN
-F 2 "DO214:DO-214AA" V 8200 2000 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88392/smbj50a.pdf" V 8200 2000 50  0001 C CNN
-F 4 "SMBJ5.0A-E3/5BGICT-ND" H 8200 2000 60  0001 C CNN "Digikey"
-	1    8200 2000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Polyfuse_Small F1
-U 1 1 58F913C4
-P 8650 1800
-F 0 "F1" V 8550 1800 50  0000 C CNN
-F 1 "Polyfuse" V 8725 1800 50  0000 C CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H 8700 1600 50  0001 L CNN
-F 3 "" H 8650 1800 50  0001 C CNN
-F 4 "MF-MSMF250/16X-2CT-ND" V 8650 1800 60  0001 C CNN "Digikey"
-	1    8650 1800
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	9100 1200 9100 1800
-Connection ~ 9100 1800
+	8100 1100 8250 1100
 Wire Wire Line
-	9100 1200 9450 1200
+	8100 1200 8100 1300
 Wire Wire Line
-	10600 1700 10450 1700
+	8100 1300 8250 1300
 Wire Wire Line
-	10450 1700 10450 1500
+	8200 750  8550 750 
 Wire Wire Line
-	10450 1500 10200 1500
+	8850 750  9200 750 
 Wire Wire Line
-	10200 1500 10200 1550
+	9150 1100 9700 1100
 Wire Wire Line
-	8200 1900 8200 1800
-Connection ~ 8200 1800
+	9150 1300 9250 1300
 Wire Wire Line
-	8000 1800 8550 1800
+	9250 1300 9250 1500
 Wire Wire Line
-	8750 1800 10600 1800
+	9450 1100 9450 1150
 Wire Wire Line
-	8200 2100 8200 2200
-$Comp
-L GND #PWR024
-U 1 1 58F94710
-P 8200 2200
-F 0 "#PWR024" H 8200 1950 50  0001 C CNN
-F 1 "GND" H 8200 2050 50  0000 C CNN
-F 2 "" H 8200 2200 50  0001 C CNN
-F 3 "" H 8200 2200 50  0001 C CNN
-	1    8200 2200
-	1    0    0    -1  
-$EndComp
+	9450 1450 9450 1800
+Connection ~ 9450 1100
+Connection ~ 9450 1500
+Wire Wire Line
+	8100 1700 9900 1700
+Connection ~ 9700 1700
+Wire Wire Line
+	10200 1700 10100 1700
+Wire Wire Line
+	9250 1500 9450 1500
+Wire Wire Line
+	9700 2400 10950 2400
+Wire Wire Line
+	10400 2400 10400 2300
+Wire Wire Line
+	10600 1700 10900 1700
+Wire Wire Line
+	10800 1700 10800 1950
+Wire Wire Line
+	10800 2400 10800 2150
+Connection ~ 10400 2400
+Connection ~ 10800 2400
+Connection ~ 10800 1700
+Wire Notes Line
+	3600 2500 7400 2500
+Wire Notes Line
+	7400 2800 11200 2800
+Wire Wire Line
+	8100 1800 9700 1800
+Wire Wire Line
+	9700 1800 9700 2400
+Wire Wire Line
+	9700 1100 9700 1700
+Wire Wire Line
+	10950 2400 10950 2500
+Connection ~ 9450 1800
+Wire Wire Line
+	8200 750  8200 1100
+Connection ~ 8200 1100
+Wire Wire Line
+	9200 750  9200 1100
+Connection ~ 9200 1100
 $EndSCHEMATC
