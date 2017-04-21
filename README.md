@@ -7,8 +7,10 @@ give you the following additional features:
 
 Power
 
-- Screw terminal and footprint for MP1584 step-down regulator (6.7-28V)
+- Screw terminal and footprint for MP1584 step-down regulator module (6.7-28V)
 - Screw terminal for direct power input/output (5V)
+- Protection diode and resettable polyfuse against high voltage spikes
+- Protection against reverse polarity power input
 
 Headers
 
@@ -18,15 +20,16 @@ Headers
 
 Sensors
 
-- Footprint for a [SHT21](https://sensirion.com/sht21/) temperature/humidity
-  sensor (SMD package)
-- Footprint for an MCP3425 ADC to measure RPi supply voltage
+- A [SHT21](https://sensirion.com/sht21/) temperature/humidity sensor
+- An MCP3425 16-bit ADC to measure RPi supply voltage
 
 Other
 
 - Pin header with flyback diode for 5V fan (5V/GND)
-- Footprint for three general purpose SMD LEDs (Note: Only usable with 40-pin
-  GPIO header)
+- General purpose button connected to GPIO pin (e.g. for controlled Raspi
+  shutdown)
+- Three general purpose SMD LEDs (Note: Only usable from Raspi versions
+  with 40-pin GPIO header)
 - Mounting holes for Raspberry Pi B+ / 2B / 3B / Zero
 
 ## PCB
