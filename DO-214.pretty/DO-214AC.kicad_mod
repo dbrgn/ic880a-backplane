@@ -1,6 +1,6 @@
-(module DO-214AC (layer F.Cu) (tedit 58F8FD36)
+(module DO-214AC (layer F.Cu) (tedit 58FD12DD)
   (fp_text reference D4 (at 3.048 -2.413) (layer F.SilkS)
-    (effects (font (size 0.7 0.7) (thickness 0.15)))
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value D (at 1.651 -2.032) (layer F.SilkS) hide
     (effects (font (size 0.29972 0.29972) (thickness 0.07493)))
@@ -15,6 +15,6 @@
   (model /home/danilo/Projects/ic880a-sensor-backplane/DO-214.3d/AB2_DO-214AC.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.3937 0.3937 0.3937))
-    (rotate (xyz 0 0 180))
+    (rotate (xyz 0 0 0))
   )
 )
