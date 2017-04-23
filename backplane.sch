@@ -401,7 +401,8 @@ P 9950 5600
 F 0 "D4" H 9950 5700 50  0000 C CNN
 F 1 "D" H 9950 5500 50  0000 C CNN
 F 2 "DO214:DO-214AC" H 9950 5600 50  0001 C CNN
-F 3 "" H 9950 5600 50  0000 C CNN
+F 3 "http://mikroshop.ch/pdf/ss12.pdf" H 9950 5600 50  0001 C CNN
+F 4 "Vishay SS14" H 9950 5600 60  0001 C CNN "Model"
 	1    9950 5600
 	0    1    1    0   
 $EndComp
@@ -870,7 +871,8 @@ P 8700 750
 F 0 "D6" H 8550 700 50  0000 C CNN
 F 1 "D" H 8800 700 50  0000 C CNN
 F 2 "DO214:DO-214AC" H 8700 750 50  0001 C CNN
-F 3 "" H 8700 750 50  0000 C CNN
+F 3 "http://mikroshop.ch/pdf/ss12.pdf" H 8700 750 50  0001 C CNN
+F 4 "Vishay SS14" H 8700 750 60  0001 C CNN "Model"
 	1    8700 750 
 	1    0    0    -1  
 $EndComp
