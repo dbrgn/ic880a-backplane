@@ -41,7 +41,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "iC880A RPi Backplane"
-Date "2017-04-21"
+Date "2017-05-06"
 Rev "v1.1"
 Comp "Danilo Bargen / Coredump Rapperswil"
 Comment1 "Buy from https://shop.coredump.ch/"
@@ -731,7 +731,7 @@ F 0 "R11" V 9030 3650 50  0000 C CNN
 F 1 "R" V 8950 3650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8880 3650 50  0001 C CNN
 F 3 "" H 8950 3650 50  0000 C CNN
-F 4 "3.9kΩ" V 8850 3650 60  0000 C CNN "R"
+F 4 "3.6kΩ" V 8850 3650 60  0000 C CNN "R"
 	1    8950 3650
 	1    0    0    -1  
 $EndComp
@@ -743,7 +743,7 @@ F 0 "R10" V 9030 3250 50  0000 C CNN
 F 1 "R" V 8950 3250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8880 3250 50  0001 C CNN
 F 3 "" H 8950 3250 50  0000 C CNN
-F 4 "3.6kΩ" V 8850 3250 60  0000 C CNN "R"
+F 4 "6.8kΩ" V 8850 3250 60  0000 C CNN "R"
 	1    8950 3250
 	1    0    0    -1  
 $EndComp
