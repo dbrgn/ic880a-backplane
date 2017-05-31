@@ -39,13 +39,14 @@ g.output(LED_R, g.LOW)
 g.output(LED_Y, g.LOW)
 g.output(LED_B, g.LOW)
 
-if input('\nTest sensor? [y/n]').strip() == 'y':
+if input('\nTest sensor? [y/n] ').strip() == 'y':
     print('Initializing sensor...')
     if os.path.isfile(DEV_TMP) and os.path.isfile(DEV_HUM):
         print('Already initialized.')
     with open(DEV_REG, 'wb') as f:
-        f.write(DEV_REG_PARAM)
+        f.write(DEV_REG_PARAM.encode('ascii'))
         print('Sensor registered.')
+    time.sleep(2)
     print('Reading temperature... ', end='')
     with open(DEV_TMP, 'rb') as f:
         val = f.read().strip()
