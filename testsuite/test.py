@@ -2,9 +2,9 @@ import os.path
 import time
 import RPi.GPIO as g
 
-LED_R = 40
+LED_R = 36
 LED_Y = 38
-LED_B = 36
+LED_B = 40
 BTN = 32
 
 DEV_REG = '/sys/bus/i2c/devices/i2c-1/new_device'
@@ -12,12 +12,12 @@ DEV_REG_PARAM = 'sht21 0x40'
 DEV_TMP = '/sys/class/hwmon/hwmon0/temp1_input'
 DEV_HUM = '/sys/class/hwmon/hwmon0/humidity1_input'
 
-g.setmode(g.BCM)
+g.setmode(g.BOARD)
 
 g.setup(LED_R, g.OUT)
 g.setup(LED_Y, g.OUT)
 g.setup(LED_B, g.OUT)
-g.setup(LED_B, g.IN, pull_up_down=g.PUD_UP)
+g.setup(BTN, g.IN, pull_up_down=g.PUD_UP)
 
 print('=== iC880A Backplane Test Program ===\n')
 
@@ -34,6 +34,10 @@ try:
 except KeyboardInterrupt:
     print('Aborted.')
     pass
+
+g.output(LED_R, g.LOW)
+g.output(LED_Y, g.LOW)
+g.output(LED_B, g.LOW)
 
 if input('\nTest sensor? [y/n]').strip() == 'y':
     print('Initializing sensor...')
@@ -54,4 +58,6 @@ if input('\nTest sensor? [y/n]').strip() == 'y':
         print(humidity)
 
 
-print('=== DONE! ===')
+print('\n=== DONE! ===')
+
+g.cleanup()
