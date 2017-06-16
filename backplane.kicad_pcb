@@ -15,8 +15,8 @@
   (page A4)
   (title_block
     (title "iC880A-SPI Raspberry Pi Backplane")
-    (date 2017-03-14)
-    (rev v1.1)
+    (date 2017-06-16)
+    (rev v1.2)
     (company "Coredump Rapperswil")
   )
 
@@ -96,7 +96,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory v1.1))
+      (outputdirectory v1.2))
   )
 
   (net 0 "")
@@ -2388,7 +2388,7 @@
   (gr_text OSHW (at 157.48 88.646 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "iC880A Backplane v1.1" (at 150.114 90.17 315) (layer F.Mask)
+  (gr_text "iC880A Backplane v1.2" (at 150.114 90.17 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 209.343 153.924) (end 202.438 153.924) (angle 90) (layer Edge.Cuts) (width 0.15))
