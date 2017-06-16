@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name headers)(type KiCad)(uri /home/danilo/Projects/ic880a-sensor-backplane/headers.pretty)(options "")(descr ""))
+)
