@@ -3,7 +3,7 @@
   (general
     (links 125)
     (no_connects 1)
-    (area 115.367999 70.028999 209.418001 153.999001)
+    (area 101.473 58.674 214.503001 157.734001)
     (thickness 1.6)
     (drawings 93)
     (tracks 395)
@@ -15,8 +15,8 @@
   (page A4)
   (title_block
     (title "iC880A-SPI Raspberry Pi Backplane")
-    (date 2017-06-16)
-    (rev v1.2)
+    (date 2017-08-10)
+    (rev v1.3)
     (company "Coredump Rapperswil")
   )
 
@@ -2167,7 +2167,7 @@
     )
   )
 
-  (gr_text "coredump.ch / adnexo.ch 2017" (at 148.0312 92.0496 315) (layer F.Mask) (tstamp 58A8E454)
+  (gr_text "coredump.ch 2017" (at 148.0312 92.0496 315) (layer F.Mask) (tstamp 58A8E454)
     (effects (font (size 1.3 1.3) (thickness 0.2)))
   )
   (gr_text "PWR\n(Direct)" (at 116.078 137.16) (layer F.SilkS) (tstamp 589F972C)
@@ -2388,7 +2388,7 @@
   (gr_text OSHW (at 157.48 88.646 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "iC880A Backplane v1.2" (at 150.114 90.17 315) (layer F.Mask)
+  (gr_text "iC880A Backplane v1.3" (at 150.114 90.17 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 209.343 153.924) (end 202.438 153.924) (angle 90) (layer Edge.Cuts) (width 0.15))
