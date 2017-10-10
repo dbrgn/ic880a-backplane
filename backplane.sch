@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:backplane-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -696,7 +697,7 @@ LED2
 Text GLabel 1100 5650 0    60   Input ~ 0
 LED1
 $Comp
-L MCP3425A0T-E/CH U5
+L MCP3425A0T-E/CH-RESCUE-backplane U5
 U 1 1 58F1408D
 P 10050 3650
 F 0 "U5" H 9650 3950 50  0000 L CNN

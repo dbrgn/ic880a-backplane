@@ -96,7 +96,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory v1.2))
+      (outputdirectory v1.3))
   )
 
   (net 0 "")
