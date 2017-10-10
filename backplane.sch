@@ -133,7 +133,6 @@ NoConn ~ 4650 6850
 NoConn ~ 4650 6950
 NoConn ~ 4650 7050
 NoConn ~ 6050 7050
-NoConn ~ 6050 6250
 NoConn ~ 6050 6350
 NoConn ~ 1200 5200
 NoConn ~ 1200 5700
@@ -1322,4 +1321,21 @@ Wire Wire Line
 	3150 7450 3150 7500
 Wire Wire Line
 	3150 7500 3100 7500
+$Comp
+L Conn_01x01 J7
+U 1 1 59DD80A7
+P 4150 7500
+F 0 "J7" H 4150 7600 50  0000 C CNN
+F 1 "Conn_PPS" H 4150 7400 50  0000 C CNN
+F 2 "headers:header_1x1_unmarked" H 4150 7500 50  0001 C CNN
+F 3 "" H 4150 7500 50  0001 C CNN
+	1    4150 7500
+	-1   0    0    1   
+$EndComp
+Text GLabel 6150 6250 2    60   Input ~ 0
+PPS
+Wire Wire Line
+	6150 6250 6050 6250
+Text GLabel 4350 7500 2    60   Input ~ 0
+PPS
 $EndSCHEMATC
