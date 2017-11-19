@@ -45,7 +45,7 @@ Other
 
 ## Schematics
 
-See [schematics-v1.1.pdf](schematics-v1.1.pdf).
+See [schematics-v1.4.pdf](schematics-v1.4.pdf).
 
 
 ## Development
