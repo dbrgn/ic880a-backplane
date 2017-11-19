@@ -3,7 +3,7 @@
   (general
     (links 126)
     (no_connects 1)
-    (area 101.473 58.674 214.503001 157.734001)
+    (area 115.367999 70.028999 209.418001 153.999001)
     (thickness 1.6)
     (drawings 93)
     (tracks 400)
@@ -387,6 +387,21 @@
       (net 7 GND))
     (pad 25 thru_hole circle (at 23.94 -30.65) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
     (pad 26 thru_hole circle (at 26.48 -30.65) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x03_Pitch2.54mm.wrl
+      (at (xyz -0.758 1.207 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x03_Pitch2.54mm.wrl
+      (at (xyz 0.9419999999999999 1.207 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x20_Pitch2.54mm.wrl
+      (at (xyz -0.007 -1.207 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module StitchingVia:VIA-0.6mm (layer F.Cu) (tedit 58F8EE36) (tstamp 58F9ADF5)
@@ -1001,7 +1016,7 @@
     (model Housings_DFN_QFN.3dshapes/DFN-6-1EP_3x3mm_Pitch0.95mm.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 270))
     )
   )
 
@@ -1065,7 +1080,7 @@
       (net 32 TX))
     (pad 2 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 33 RX))
-    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x02.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x02_Pitch2.54mm.wrl
       (at (xyz 0 -0.05 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1105,7 +1120,7 @@
       (net 10 3.3V))
     (pad 5 thru_hole oval (at 0 10.16) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 11 5V))
-    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x05.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x05_Pitch2.54mm.wrl
       (at (xyz 0 -0.2 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1145,7 +1160,7 @@
       (net 10 3.3V))
     (pad 5 thru_hole oval (at 0 10.16) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 11 5V))
-    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x05.wrl
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x05_Pitch2.54mm.wrl
       (at (xyz 0 -0.2 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1179,10 +1194,10 @@
       (net 8 "Net-(D4-Pad2)"))
     (pad 2 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 11 5V))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x02_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
+    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x02_Pitch2.54mm.wrl
+      (at (xyz 0 -0.05 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -1429,7 +1444,7 @@
     (model TO_SOT_Packages_SMD.3dshapes/SOT-23.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 0))
     )
   )
 

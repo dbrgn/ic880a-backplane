@@ -36,9 +36,11 @@ Other
 
 ## PCB
 
-![Rendered](rendered-v1.1/top.png)
+![Rendered](rendered/front.png)
 
-![Rendered](rendered-v1.1/bottom.png)
+![Rendered](rendered/back.png)
+
+![Rendered](rendered/3d.png)
 
 
 ## Schematics

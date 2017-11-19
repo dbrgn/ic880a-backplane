@@ -1,4 +1,4 @@
-update=mar 10 Okt 2017 23:06:32 +0200
+update=ĵaŭ 09 Nov 2017 16:45:43 +0100
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -75,3 +65,13 @@ LibName33=raspi
 LibName34=/home/danilo/Projects/ic880a-sensor-backplane/sensirion
 LibName35=/home/danilo/Projects/ic880a-sensor-backplane/regulators
 LibName36=switches
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
