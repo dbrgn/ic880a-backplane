@@ -15,8 +15,8 @@
   (page A4)
   (title_block
     (title "iC880A-SPI Raspberry Pi Backplane")
-    (date 2017-10-10)
-    (rev v1.4)
+    (date 2018-01-17)
+    (rev v1.5)
     (company "Coredump Rapperswil")
   )
 
