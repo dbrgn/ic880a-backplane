@@ -19,9 +19,9 @@
   (fp_line (start -1.6 6.64) (end 1.6 6.64) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.6 6.64) (end 1.6 -1.6) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.6 -1.6) (end -1.6 -1.6) (layer F.CrtYd) (width 0.05))
-  (pad 1 thru_hole circle (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
-  (pad 2 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
-  (pad 3 thru_hole oval (at 0 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+  (pad 1 thru_hole circle (at 0 0) (size 2 2) (drill 0.9) (layers *.Cu *.Mask))
+  (pad 2 thru_hole oval (at 0 2.54) (size 2 2) (drill 0.9) (layers *.Cu *.Mask))
+  (pad 3 thru_hole oval (at 0 5.08) (size 2 2) (drill 0.9) (layers *.Cu *.Mask))
   (model Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl
     (at (xyz 0 -0.05 0))
     (scale (xyz 1 1 1))
