@@ -60,7 +60,7 @@ Make sure that you clone all submodules:
 
 ## License
 
-© 2017 Danilo Bargen. Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
+© 2017–2018 Danilo Bargen. Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
 
 If you make any modification to this board, it would be great if you could let
 me know at mail@dbrgn.ch.
