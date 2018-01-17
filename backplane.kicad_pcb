@@ -1724,7 +1724,7 @@
     (fp_text reference J7 (at 0 2.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_PPS (at -2.921 0) (layer F.SilkS)
+    (fp_text value PPS (at -2.921 0) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.27 -1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))

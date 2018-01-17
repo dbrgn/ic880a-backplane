@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/danilo/Projects/ic880a-sensor-backplane/backplane.sch)
-    (date "mer 17 Jan 2018 22:40:52 +0100")
+    (date "mer 17 Jan 2018 22:59:10 +0100")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -251,7 +251,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 58961502))
     (comp (ref J7)
-      (value Conn_PPS)
+      (value PPS)
       (footprint headers:header_1x1_unmarked)
       (libsource (lib conn) (part Conn_01x01))
       (sheetpath (names /) (tstamps /))
@@ -536,6 +536,10 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive)))))
   (libraries
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
     (library (logical ic880a-spi)
       (uri /home/danilo/Projects/ic880a-sensor-backplane/ic880a-spi.lib))
     (library (logical headers)
@@ -551,11 +555,7 @@
     (library (logical switches)
       (uri /usr/share/kicad/library/switches.lib))
     (library (logical backplane-rescue)
-      (uri /home/danilo/Projects/ic880a-sensor-backplane/backplane-rescue.lib))
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /home/danilo/Projects/ic880a-sensor-backplane/backplane-rescue.lib)))
   (nets
     (net (code 1) (name SDA)
       (node (ref U3) (pin 1))
