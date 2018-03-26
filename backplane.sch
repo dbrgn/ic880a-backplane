@@ -42,8 +42,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "iC880A RPi Backplane"
-Date "2018-01-17"
-Rev "v1.5"
+Date "2018-03-26"
+Rev "v1.6"
 Comp "Danilo Bargen / Coredump Rapperswil"
 Comment1 "Buy from https://shop.coredump.ch/"
 Comment2 ""
@@ -344,12 +344,12 @@ NoConn ~ 1200 5400
 $Comp
 L MP1584_MODULE U4
 U 1 1 589F7FAA
-P 8700 1200
-F 0 "U4" H 8700 950 60  0000 C CNN
-F 1 "MP1584_MODULE" H 8700 1500 60  0000 C CNN
-F 2 "regulators:MP1584_MODULE" H 8700 1200 60  0001 C CNN
-F 3 "" H 8700 1200 60  0001 C CNN
-	1    8700 1200
+P 8700 1100
+F 0 "U4" H 9050 800 60  0000 C CNN
+F 1 "MP1584_MODULE" H 8700 1450 60  0000 C CNN
+F 2 "regulators:MP1584_MODULE_ZVEPOWER" H 8700 1100 60  0001 C CNN
+F 3 "" H 8700 1100 60  0001 C CNN
+	1    8700 1100
 	1    0    0    1   
 $EndComp
 $Comp
@@ -730,13 +730,13 @@ $EndComp
 $Comp
 L D D6
 U 1 1 58F9565C
-P 8700 750
-F 0 "D6" H 8550 700 50  0000 C CNN
-F 1 "D" H 8800 700 50  0000 C CNN
-F 2 "DO214:DO-214AC" H 8700 750 50  0001 C CNN
-F 3 "http://mikroshop.ch/pdf/ss12.pdf" H 8700 750 50  0001 C CNN
-F 4 "Vishay SS14" H 8700 750 60  0001 C CNN "Model"
-	1    8700 750 
+P 8700 700
+F 0 "D6" H 8550 650 50  0000 C CNN
+F 1 "D" H 8800 650 50  0000 C CNN
+F 2 "DO214:DO-214AC" H 8700 700 50  0001 C CNN
+F 3 "http://mikroshop.ch/pdf/ss12.pdf" H 8700 700 50  0001 C CNN
+F 4 "Vishay SS14" H 8700 700 60  0001 C CNN "Model"
+	1    8700 700 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1076,19 +1076,15 @@ Wire Wire Line
 Wire Wire Line
 	8100 1100 8250 1100
 Wire Wire Line
-	8100 1200 8100 1300
+	8200 700  8550 700 
 Wire Wire Line
-	8100 1300 8250 1300
-Wire Wire Line
-	8200 750  8550 750 
-Wire Wire Line
-	8850 750  9200 750 
+	8850 700  9200 700 
 Wire Wire Line
 	9150 1100 9700 1100
 Wire Wire Line
-	9150 1300 9250 1300
+	9150 1250 9250 1250
 Wire Wire Line
-	9250 1300 9250 1500
+	9250 1250 9250 1500
 Wire Wire Line
 	9450 1100 9450 1150
 Wire Wire Line
@@ -1129,10 +1125,10 @@ Wire Wire Line
 	10950 2400 10950 2500
 Connection ~ 9450 1800
 Wire Wire Line
-	8200 750  8200 1100
+	8200 700  8200 1100
 Connection ~ 8200 1100
 Wire Wire Line
-	9200 750  9200 1100
+	9200 700  9200 1100
 Connection ~ 9200 1100
 Wire Wire Line
 	3200 6650 3150 6650
@@ -1185,4 +1181,13 @@ F 3 "" H 2850 2650 50  0001 C CNN
 	1    2850 2650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8250 950  8200 950 
+Connection ~ 8200 950 
+Wire Wire Line
+	8100 1200 8200 1200
+Wire Wire Line
+	8200 1200 8200 1250
+Wire Wire Line
+	8200 1250 8250 1250
 $EndSCHEMATC
