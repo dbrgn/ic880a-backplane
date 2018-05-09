@@ -1,7 +1,7 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 131)
+    (links 135)
     (no_connects 0)
     (area 115.367999 70.028999 209.418001 153.999001)
     (thickness 1.6)
@@ -2133,7 +2133,7 @@
   (gr_line (start 201.168 105.8545) (end 201.168 107.4355) (layer Edge.Cuts) (width 0.15) (tstamp 58A8B043))
   (gr_line (start 202.438 112.903) (end 202.438 115.754) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 201.168 112.903) (end 201.168 114.484) (layer Edge.Cuts) (width 0.15))
-  (gr_text "MP1584\nModule" (at 156.718 120.65) (layer F.SilkS)
+  (gr_text "MP1584\nModule" (at 156 120.6) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text 6.7-28V (at 116.2 85.325) (layer F.SilkS) (tstamp 589F968F)
