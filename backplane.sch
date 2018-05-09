@@ -1,10 +1,40 @@
 EESchema Schematic File Version 2
 LIBS:backplane-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:ic880a-spi
 LIBS:headers
 LIBS:raspi
 LIBS:sensirion
 LIBS:regulators
+LIBS:switches
 LIBS:backplane-cache
 EELAYER 25 0
 EELAYER END
@@ -12,7 +42,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "iC880A RPi Backplane"
-Date "2018-04-23"
+Date "2018-05-10"
 Rev "v2.0"
 Comp "Danilo Bargen / Coredump Rapperswil"
 Comment1 "Buy from https://shop.coredump.ch/"
@@ -220,38 +250,38 @@ NoConn ~ 6900 4650
 $Comp
 L C C1
 U 1 1 5898C4BA
-P 6150 1000
-F 0 "C1" H 6150 1100 40  0000 L CNN
-F 1 "C" H 6156 915 40  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6188 850 30  0001 C CNN
-F 3 "" H 6150 1000 60  0001 C CNN
-F 4 "100nF" V 6000 1000 60  0000 C CNN "C"
-	1    6150 1000
+P 6400 700
+F 0 "C1" H 6400 800 40  0000 L CNN
+F 1 "C" H 6406 615 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6438 550 30  0001 C CNN
+F 3 "" H 6400 700 60  0001 C CNN
+F 4 "100nF" V 6250 700 60  0000 C CNN "C"
+	1    6400 700 
 	0    1    1    0   
 $EndComp
 $Comp
 L R R4
 U 1 1 589B82C4
-P 6650 1950
-F 0 "R4" V 6730 1950 40  0000 C CNN
-F 1 "R" V 6657 1951 40  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 6580 1950 30  0001 C CNN
-F 3 "" H 6650 1950 30  0000 C CNN
-F 4 "10kΩ" V 6550 1950 60  0000 C CNN "R"
-	1    6650 1950
-	-1   0    0    1   
+P 3650 1550
+F 0 "R4" V 3730 1550 40  0000 C CNN
+F 1 "R" V 3657 1551 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3580 1550 30  0001 C CNN
+F 3 "" H 3650 1550 30  0000 C CNN
+F 4 "10kΩ" V 3550 1550 60  0000 C CNN "R"
+	1    3650 1550
+	0    1    1    0   
 $EndComp
 $Comp
 L R R5
 U 1 1 589B831C
-P 5650 1950
-F 0 "R5" V 5730 1950 40  0000 C CNN
-F 1 "R" V 5657 1951 40  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 5580 1950 30  0001 C CNN
-F 3 "" H 5650 1950 30  0000 C CNN
-F 4 "10kΩ" V 5550 1950 60  0000 C CNN "R"
-	1    5650 1950
-	-1   0    0    1   
+P 3650 1800
+F 0 "R5" V 3730 1800 40  0000 C CNN
+F 1 "R" V 3657 1801 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3580 1800 30  0001 C CNN
+F 3 "" H 3650 1800 30  0000 C CNN
+F 4 "10kΩ" V 3550 1800 60  0000 C CNN "R"
+	1    3650 1800
+	0    1    1    0   
 $EndComp
 $Comp
 L I2C_HEADER J2
@@ -480,30 +510,30 @@ Text GLabel 6000 3400 0    60   Input ~ 0
 3.3V
 Text GLabel 2300 4350 2    60   Input ~ 0
 3.3V
-Text GLabel 6700 1700 2    60   Input ~ 0
+Text GLabel 6850 1300 2    60   Input ~ 0
 SDA
-Text GLabel 6650 2150 3    60   Input ~ 0
+Text GLabel 3850 1550 2    60   Input ~ 0
 3.3V
 $Comp
 L GND #PWR012
 U 1 1 58F2395B
-P 7050 1550
-F 0 "#PWR012" H 7050 1300 50  0001 C CNN
-F 1 "GND" H 7050 1400 50  0000 C CNN
-F 2 "" H 7050 1550 50  0000 C CNN
-F 3 "" H 7050 1550 50  0000 C CNN
-	1    7050 1550
+P 7200 1100
+F 0 "#PWR012" H 7200 850 50  0001 C CNN
+F 1 "GND" H 7200 950 50  0000 C CNN
+F 2 "" H 7200 1100 50  0000 C CNN
+F 3 "" H 7200 1100 50  0000 C CNN
+	1    7200 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 5650 2150 3    60   Input ~ 0
+Text GLabel 3850 1800 2    60   Input ~ 0
 3.3V
-Text GLabel 5600 1700 0    60   Input ~ 0
+Text GLabel 5950 1300 0    60   Input ~ 0
 SCL
 Text GLabel 3100 4900 2    60   Input ~ 0
 SDA
 Text GLabel 3100 5050 2    60   Input ~ 0
 SCL
-Text GLabel 5400 1500 0    60   Input ~ 0
+Text GLabel 5850 1100 0    60   Input ~ 0
 3.3V
 Text GLabel 1100 5100 0    60   Input ~ 0
 LED3
@@ -612,8 +642,8 @@ Text Notes 3950 4050 0    157  ~ 0
 iC880A
 Text Notes 650  800  0    157  ~ 0
 LEDs
-Text Notes 3750 800  0    157  ~ 0
-SHTC1 Sensor
+Text Notes 3200 750  0    157  ~ 0
+SHTC1 Sensors
 Text Notes 4150 2850 0    157  ~ 0
 I²C Breakouts
 Text Notes 7500 750  0    157  ~ 0
@@ -628,8 +658,8 @@ Text Notes 7450 3950 0    60   ~ 0
 This is a 16-Bit\nAnalog-to-Digital\nConverter that is\nwired up to\nmeasure the\nRaspberry Pi\nsupply voltage.
 Text Notes 11050 1200 2    60   ~ 0
 The board includes a 5V\npower input/output\nconnector as well as a\nMP1584 step-down\nvoltage regulator for\n6.7-28V input.
-Text Notes 3750 1800 0    60   ~ 0
-The Sensirion SHTC1 sensor\nmeasures both temperature\nand humidity.\n\nTemperature\nmeasurements\nare accurate to\n±0.3°C, humidity is\naccurate to ±3%RH.
+Text Notes 3200 1100 0    60   ~ 0
+The Sensirion SHT21/SHTC3 sensor\nmeasures both temperature\nand humidity.
 Text Notes 7500 5000 0    157  ~ 0
 Button
 Text Notes 7500 5900 0    60   ~ 0
@@ -766,6 +796,38 @@ Text GLabel 6150 6250 2    60   Input ~ 0
 PPS
 Text GLabel 4350 7500 2    60   Input ~ 0
 PPS
+$Comp
+L GND #PWR017
+U 1 1 5A6018E8
+P 2850 2650
+F 0 "#PWR017" H 2850 2400 50  0001 C CNN
+F 1 "GND" H 2850 2500 50  0000 C CNN
+F 2 "" H 2850 2650 50  0001 C CNN
+F 3 "" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 2000 0    60   Input ~ 0
+3.3V
+$Comp
+L GND #PWR018
+U 1 1 5AF387E6
+P 7250 2000
+F 0 "#PWR018" H 7250 1750 50  0001 C CNN
+F 1 "GND" H 7250 1850 50  0000 C CNN
+F 2 "" H 7250 2000 50  0001 C CNN
+F 3 "" H 7250 2000 50  0001 C CNN
+	1    7250 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 2150 2    60   Input ~ 0
+SDA
+Text Notes 4800 2300 0    60   ~ 0
+Accuracy SHT21:\n±0.3°C / ±3%RH
+Text GLabel 5900 2150 0    60   Input ~ 0
+SCL
+Text Notes 4850 1450 0    60   ~ 0
+Accuracy SHTC3:\n±0.2°C / ±2%RH
 Wire Wire Line
 	6500 6700 6550 6700
 Wire Wire Line
@@ -777,7 +839,7 @@ Wire Notes Line
 Wire Notes Line
 	7400 500  7400 6500
 Wire Notes Line
-	3600 3750 3600 500 
+	3050 3750 3050 500 
 Wire Notes Line
 	500  3750 7400 3750
 Wire Notes Line
@@ -849,7 +911,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 6500 3000 6500
 Wire Wire Line
-	5400 1500 5700 1500
+	5850 1100 5950 1100
 Connection ~ 2200 4450
 Wire Wire Line
 	2300 4450 2300 4500
@@ -862,21 +924,11 @@ Wire Wire Line
 Wire Wire Line
 	3000 5000 3050 5000
 Wire Wire Line
-	5600 1700 5700 1700
+	3850 1800 3800 1800
 Wire Wire Line
-	5650 2150 5650 2100
+	6850 1100 7200 1100
 Wire Wire Line
-	5650 1700 5650 1800
-Wire Wire Line
-	7050 1500 7050 1550
-Wire Wire Line
-	6600 1500 7050 1500
-Wire Wire Line
-	6650 2150 6650 2100
-Wire Wire Line
-	6650 1700 6650 1800
-Wire Wire Line
-	6600 1700 6700 1700
+	3850 1550 3800 1550
 Wire Wire Line
 	1650 7400 1650 7500
 Wire Wire Line
@@ -995,15 +1047,15 @@ Wire Wire Line
 Wire Wire Line
 	6950 4750 6950 4800
 Wire Wire Line
-	6700 1500 6700 1000
+	6900 1100 6900 700 
 Wire Wire Line
-	6700 1000 6300 1000
-Connection ~ 6700 1500
+	6900 700  6550 700 
+Connection ~ 6900 1100
 Wire Wire Line
-	6000 1000 5600 1000
+	6250 700  5900 700 
 Wire Wire Line
-	5600 1000 5600 1500
-Connection ~ 5600 1500
+	5900 700  5900 1100
+Connection ~ 5900 1100
 Wire Wire Line
 	9650 5550 9650 5800
 Wire Wire Line
@@ -1071,7 +1123,7 @@ Connection ~ 10400 2400
 Connection ~ 10800 2400
 Connection ~ 10800 1700
 Wire Notes Line
-	3600 2500 7400 2500
+	2500 2450 7400 2450
 Wire Notes Line
 	7400 2800 11200 2800
 Wire Wire Line
@@ -1129,17 +1181,6 @@ Wire Wire Line
 	2850 1600 2850 2650
 Connection ~ 2850 2000
 Connection ~ 2850 2400
-$Comp
-L GND #PWR017
-U 1 1 5A6018E8
-P 2850 2650
-F 0 "#PWR017" H 2850 2400 50  0001 C CNN
-F 1 "GND" H 2850 2500 50  0000 C CNN
-F 2 "" H 2850 2650 50  0001 C CNN
-F 3 "" H 2850 2650 50  0001 C CNN
-	1    2850 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8250 950  8200 950 
 Connection ~ 8200 950 
@@ -1149,17 +1190,38 @@ Wire Wire Line
 	8200 1200 8200 1250
 Wire Wire Line
 	8200 1250 8250 1250
+Wire Wire Line
+	6900 2000 7250 2000
 $Comp
-L SHTC1 U3
-U 1 1 5ADE2706
-P 6150 1600
-F 0 "U3" H 6150 1300 60  0000 C CNN
-F 1 "SHTC1" H 6150 1900 60  0000 C CNN
-F 2 "sensirion:SHTC1" H 6150 1600 60  0001 C CNN
-F 3 "" H 6150 1600 60  0001 C CNN
-	1    6150 1600
+L SHTC3 U6
+U 1 1 5AF37D64
+P 6400 1200
+F 0 "U6" H 6400 950 60  0000 C CNN
+F 1 "SHTC3" H 6400 1450 60  0000 C CNN
+F 2 "sensirion:SHTC1" H 6400 1200 60  0001 C CNN
+F 3 "" H 6400 1200 60  0001 C CNN
+	1    6400 1200
 	1    0    0    -1  
 $EndComp
-Connection ~ 5650 1700
-Connection ~ 6650 1700
+Text GLabel 3450 1800 0    60   Input ~ 0
+SCL
+Text GLabel 3450 1550 0    60   Input ~ 0
+SDA
+Wire Wire Line
+	3450 1550 3500 1550
+Wire Wire Line
+	3500 1800 3450 1800
+Text Notes 3250 2050 0    60   ~ 0
+I²C Pull-Ups
+$Comp
+L SHT21 U3
+U 1 1 5AF38676
+P 6400 2000
+F 0 "U3" H 6400 1700 60  0000 C CNN
+F 1 "SHT21" H 6400 2300 60  0000 C CNN
+F 2 "sensirion:SHT21" H 6400 2000 60  0001 C CNN
+F 3 "" H 6400 2000 60  0001 C CNN
+	1    6400 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -10,4 +10,9 @@ D Sensirion SHTC1
 K shtc1, sht, sensirion, humidity, temperature
 $ENDCMP
 #
+$CMP SHTC3
+D Sensirion SHTC3
+K shtc3, sht, sensirion, humidity, temperature
+$ENDCMP
+#
 #End Doc Library
