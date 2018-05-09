@@ -1,9 +1,9 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 126)
-    (no_connects 5)
-    (area 115.367999 70.028999 209.418001 153.999001)
+    (links 132)
+    (no_connects 1)
+    (area 101.473 58.674 214.503001 157.734001)
     (thickness 1.6)
     (drawings 93)
     (tracks 386)
@@ -2269,7 +2269,7 @@
   (gr_text OSHW (at 158.58 89.696 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "iC880A Backplane v1.6" (at 150.114 90.17 315) (layer F.Mask)
+  (gr_text "iC880A Backplane v2.0" (at 150.114 90.17 315) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 209.343 153.924) (end 202.438 153.924) (angle 90) (layer Edge.Cuts) (width 0.15))
