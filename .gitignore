@@ -2,3 +2,5 @@
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.wings~
+*.wings#

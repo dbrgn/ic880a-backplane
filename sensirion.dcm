@@ -5,4 +5,9 @@ D Sensirion SHT21
 K sht21, sht, sensirion, humidity, temperature
 $ENDCMP
 #
+$CMP SHTC1
+D Sensirion SHTC1
+K shtc1, sht, sensirion, humidity, temperature
+$ENDCMP
+#
 #End Doc Library
