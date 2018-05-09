@@ -1,40 +1,10 @@
 EESchema Schematic File Version 2
 LIBS:backplane-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:ic880a-spi
 LIBS:headers
 LIBS:raspi
 LIBS:sensirion
 LIBS:regulators
-LIBS:switches
 LIBS:backplane-cache
 EELAYER 25 0
 EELAYER END
@@ -42,8 +12,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "iC880A RPi Backplane"
-Date "2018-03-26"
-Rev "v1.6"
+Date "2018-04-23"
+Rev "v2.0"
 Comp "Danilo Bargen / Coredump Rapperswil"
 Comment1 "Buy from https://shop.coredump.ch/"
 Comment2 ""
@@ -248,17 +218,6 @@ $EndComp
 NoConn ~ 6900 4550
 NoConn ~ 6900 4650
 $Comp
-L SHT21 U3
-U 1 1 5898B996
-P 6150 1500
-F 0 "U3" H 6150 1200 60  0000 C CNN
-F 1 "SHT21" H 6150 1800 60  0000 C CNN
-F 2 "sensirion:SHT21" H 6150 1500 60  0001 C CNN
-F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf" H 6150 1500 60  0001 C CNN
-	1    6150 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C1
 U 1 1 5898C4BA
 P 6150 1000
@@ -273,25 +232,25 @@ $EndComp
 $Comp
 L R R4
 U 1 1 589B82C4
-P 6650 1900
-F 0 "R4" V 6730 1900 40  0000 C CNN
-F 1 "R" V 6657 1901 40  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 6580 1900 30  0001 C CNN
-F 3 "" H 6650 1900 30  0000 C CNN
-F 4 "10kΩ" V 6550 1900 60  0000 C CNN "R"
-	1    6650 1900
+P 6650 1950
+F 0 "R4" V 6730 1950 40  0000 C CNN
+F 1 "R" V 6657 1951 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6580 1950 30  0001 C CNN
+F 3 "" H 6650 1950 30  0000 C CNN
+F 4 "10kΩ" V 6550 1950 60  0000 C CNN "R"
+	1    6650 1950
 	-1   0    0    1   
 $EndComp
 $Comp
 L R R5
 U 1 1 589B831C
-P 5650 1900
-F 0 "R5" V 5730 1900 40  0000 C CNN
-F 1 "R" V 5657 1901 40  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 5580 1900 30  0001 C CNN
-F 3 "" H 5650 1900 30  0000 C CNN
-F 4 "10kΩ" V 5550 1900 60  0000 C CNN "R"
-	1    5650 1900
+P 5650 1950
+F 0 "R5" V 5730 1950 40  0000 C CNN
+F 1 "R" V 5657 1951 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5580 1950 30  0001 C CNN
+F 3 "" H 5650 1950 30  0000 C CNN
+F 4 "10kΩ" V 5550 1950 60  0000 C CNN "R"
+	1    5650 1950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -521,9 +480,9 @@ Text GLabel 6000 3400 0    60   Input ~ 0
 3.3V
 Text GLabel 2300 4350 2    60   Input ~ 0
 3.3V
-Text GLabel 6700 1650 2    60   Input ~ 0
+Text GLabel 6700 1700 2    60   Input ~ 0
 SDA
-Text GLabel 6650 2100 3    60   Input ~ 0
+Text GLabel 6650 2150 3    60   Input ~ 0
 3.3V
 $Comp
 L GND #PWR012
@@ -536,9 +495,9 @@ F 3 "" H 7050 1550 50  0000 C CNN
 	1    7050 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 5650 2100 3    60   Input ~ 0
+Text GLabel 5650 2150 3    60   Input ~ 0
 3.3V
-Text GLabel 5600 1650 0    60   Input ~ 0
+Text GLabel 5600 1700 0    60   Input ~ 0
 SCL
 Text GLabel 3100 4900 2    60   Input ~ 0
 SDA
@@ -654,7 +613,7 @@ iC880A
 Text Notes 650  800  0    157  ~ 0
 LEDs
 Text Notes 3750 800  0    157  ~ 0
-SHT21 Sensor
+SHTC1 Sensor
 Text Notes 4150 2850 0    157  ~ 0
 I²C Breakouts
 Text Notes 7500 750  0    157  ~ 0
@@ -670,7 +629,7 @@ This is a 16-Bit\nAnalog-to-Digital\nConverter that is\nwired up to\nmeasure the
 Text Notes 11050 1200 2    60   ~ 0
 The board includes a 5V\npower input/output\nconnector as well as a\nMP1584 step-down\nvoltage regulator for\n6.7-28V input.
 Text Notes 3750 1800 0    60   ~ 0
-The Sensirion SHT21 sensor\nmeasures both temperature\nand humidity.\n\nTemperature\nmeasurements\nare accurate to\n±0.3°C, humidity is\naccurate to ±2%RH.
+The Sensirion SHTC1 sensor\nmeasures both temperature\nand humidity.\n\nTemperature\nmeasurements\nare accurate to\n±0.3°C, humidity is\naccurate to ±3%RH.
 Text Notes 7500 5000 0    157  ~ 0
 Button
 Text Notes 7500 5900 0    60   ~ 0
@@ -890,7 +849,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 6500 3000 6500
 Wire Wire Line
-	5400 1500 5650 1500
+	5400 1500 5700 1500
 Connection ~ 2200 4450
 Wire Wire Line
 	2300 4450 2300 4500
@@ -903,21 +862,21 @@ Wire Wire Line
 Wire Wire Line
 	3000 5000 3050 5000
 Wire Wire Line
-	5650 1650 5600 1650
+	5600 1700 5700 1700
 Wire Wire Line
-	5650 2100 5650 2050
+	5650 2150 5650 2100
 Wire Wire Line
-	5650 1650 5650 1750
+	5650 1700 5650 1800
 Wire Wire Line
 	7050 1500 7050 1550
 Wire Wire Line
-	6650 1500 7050 1500
+	6600 1500 7050 1500
 Wire Wire Line
-	6650 2100 6650 2050
+	6650 2150 6650 2100
 Wire Wire Line
-	6650 1650 6650 1750
+	6650 1700 6650 1800
 Wire Wire Line
-	6700 1650 6650 1650
+	6600 1700 6700 1700
 Wire Wire Line
 	1650 7400 1650 7500
 Wire Wire Line
@@ -1190,4 +1149,17 @@ Wire Wire Line
 	8200 1200 8200 1250
 Wire Wire Line
 	8200 1250 8250 1250
+$Comp
+L SHTC1 U3
+U 1 1 5ADE2706
+P 6150 1600
+F 0 "U3" H 6150 1300 60  0000 C CNN
+F 1 "SHTC1" H 6150 1900 60  0000 C CNN
+F 2 "sensirion:SHTC1" H 6150 1600 60  0001 C CNN
+F 3 "" H 6150 1600 60  0001 C CNN
+	1    6150 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 1700
+Connection ~ 6650 1700
 $EndSCHEMATC
