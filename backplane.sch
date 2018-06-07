@@ -643,7 +643,7 @@ iC880A
 Text Notes 650  800  0    157  ~ 0
 LEDs
 Text Notes 3200 750  0    157  ~ 0
-SHTC1 Sensors
+SHTC3 Sensor
 Text Notes 4150 2850 0    157  ~ 0
 I²C Breakouts
 Text Notes 7500 750  0    157  ~ 0
@@ -659,7 +659,7 @@ This is a 16-Bit\nAnalog-to-Digital\nConverter that is\nwired up to\nmeasure the
 Text Notes 11050 1200 2    60   ~ 0
 The board includes a 5V\npower input/output\nconnector as well as a\nMP1584 step-down\nvoltage regulator for\n6.7-28V input.
 Text Notes 3200 1100 0    60   ~ 0
-The Sensirion SHT21/SHTC3 sensor\nmeasures both temperature\nand humidity.
+The Sensirion SHT21/SHTC3 sensors\nmeasure both temperature\nand humidity.
 Text Notes 7500 5000 0    157  ~ 0
 Button
 Text Notes 7500 5900 0    60   ~ 0
