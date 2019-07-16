@@ -214,13 +214,13 @@ NoConn ~ 6900 4650
 $Comp
 L backplane-rescue:C C1
 U 1 1 5898C4BA
-P 6400 700
-F 0 "C1" H 6400 800 40  0000 L CNN
-F 1 "C" H 6406 615 40  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6438 550 30  0001 C CNN
-F 3 "" H 6400 700 60  0001 C CNN
-F 4 "100nF" V 6250 700 60  0000 C CNN "C"
-	1    6400 700 
+P 6150 1150
+F 0 "C1" H 6150 1250 40  0000 L CNN
+F 1 "C" H 6156 1065 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6188 1000 30  0001 C CNN
+F 3 "" H 6150 1150 60  0001 C CNN
+F 4 "100nF" V 6000 1150 60  0000 C CNN "C"
+	1    6150 1150
 	0    1    1    0   
 $EndComp
 $Comp
@@ -474,30 +474,30 @@ Text GLabel 6000 3400 0    60   Input ~ 0
 3.3V
 Text GLabel 2300 4350 2    60   Input ~ 0
 3.3V
-Text GLabel 6850 1300 2    60   Input ~ 0
+Text GLabel 6600 1750 2    60   Input ~ 0
 SDA
 Text GLabel 3850 1550 2    60   Input ~ 0
 3.3V
 $Comp
 L backplane-rescue:GND #PWR012
 U 1 1 58F2395B
-P 7200 1100
-F 0 "#PWR012" H 7200 850 50  0001 C CNN
-F 1 "GND" H 7200 950 50  0000 C CNN
-F 2 "" H 7200 1100 50  0000 C CNN
-F 3 "" H 7200 1100 50  0000 C CNN
-	1    7200 1100
+P 6950 1550
+F 0 "#PWR012" H 6950 1300 50  0001 C CNN
+F 1 "GND" H 6950 1400 50  0000 C CNN
+F 2 "" H 6950 1550 50  0000 C CNN
+F 3 "" H 6950 1550 50  0000 C CNN
+	1    6950 1550
 	1    0    0    -1  
 $EndComp
 Text GLabel 3850 1800 2    60   Input ~ 0
 3.3V
-Text GLabel 5950 1300 0    60   Input ~ 0
+Text GLabel 5700 1750 0    60   Input ~ 0
 SCL
 Text GLabel 3100 4900 2    60   Input ~ 0
 SDA
 Text GLabel 3100 5050 2    60   Input ~ 0
 SCL
-Text GLabel 5850 1100 0    60   Input ~ 0
+Text GLabel 5600 1550 0    60   Input ~ 0
 3.3V
 Text GLabel 1100 5100 0    60   Input ~ 0
 LED3
@@ -623,7 +623,7 @@ This is a 16-Bit\nAnalog-to-Digital\nConverter that is\nwired up to\nmeasure the
 Text Notes 11050 1200 2    60   ~ 0
 The board includes a 5V\npower input/output\nconnector as well as a\nMP1584 step-down\nvoltage regulator for\n6.7-28V input.
 Text Notes 3200 1100 0    60   ~ 0
-The Sensirion SHT21/SHTC3 sensors\nmeasure both temperature\nand humidity.
+The Sensirion SHTC3 sensor\nmeasures both temperature\nand humidity.
 Text Notes 7500 5000 0    157  ~ 0
 Button
 Text Notes 7500 5900 0    60   ~ 0
@@ -771,26 +771,7 @@ F 3 "" H 2850 2650 50  0001 C CNN
 	1    2850 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 5900 2000 0    60   Input ~ 0
-3.3V
-$Comp
-L backplane-rescue:GND #PWR018
-U 1 1 5AF387E6
-P 7250 2000
-F 0 "#PWR018" H 7250 1750 50  0001 C CNN
-F 1 "GND" H 7250 1850 50  0000 C CNN
-F 2 "" H 7250 2000 50  0001 C CNN
-F 3 "" H 7250 2000 50  0001 C CNN
-	1    7250 2000
-	1    0    0    -1  
-$EndComp
-Text GLabel 6900 2150 2    60   Input ~ 0
-SDA
-Text Notes 4800 2300 0    60   ~ 0
-Accuracy SHT21:\n±0.3°C / ±3%RH
-Text GLabel 5900 2150 0    60   Input ~ 0
-SCL
-Text Notes 4850 1450 0    60   ~ 0
+Text Notes 4600 1900 0    60   ~ 0
 Accuracy SHTC3:\n±0.2°C / ±2%RH
 Wire Wire Line
 	6500 6700 6550 6700
@@ -875,7 +856,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 6500 3000 6500
 Wire Wire Line
-	5850 1100 5900 1100
+	5600 1550 5650 1550
 Connection ~ 2200 4450
 Wire Wire Line
 	2300 4450 2300 4500
@@ -890,7 +871,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 1800 3800 1800
 Wire Wire Line
-	6850 1100 6900 1100
+	6600 1550 6650 1550
 Wire Wire Line
 	3850 1550 3800 1550
 Wire Wire Line
@@ -1011,15 +992,15 @@ Wire Wire Line
 Wire Wire Line
 	6950 4750 6950 4800
 Wire Wire Line
-	6900 1100 6900 700 
+	6650 1550 6650 1150
 Wire Wire Line
-	6900 700  6550 700 
-Connection ~ 6900 1100
+	6650 1150 6300 1150
+Connection ~ 6650 1550
 Wire Wire Line
-	6250 700  5900 700 
+	6000 1150 5650 1150
 Wire Wire Line
-	5900 700  5900 1100
-Connection ~ 5900 1100
+	5650 1150 5650 1550
+Connection ~ 5650 1550
 Wire Wire Line
 	9650 5550 9650 5750
 Wire Wire Line
@@ -1154,17 +1135,15 @@ Wire Wire Line
 	8200 1200 8200 1250
 Wire Wire Line
 	8200 1250 8250 1250
-Wire Wire Line
-	6900 2000 7250 2000
 $Comp
 L backplane-rescue:SHTC3 U6
 U 1 1 5AF37D64
-P 6400 1200
-F 0 "U6" H 6400 950 60  0000 C CNN
-F 1 "SHTC3" H 6400 1450 60  0000 C CNN
-F 2 "sensirion:SHTC1" H 6400 1200 60  0001 C CNN
-F 3 "" H 6400 1200 60  0001 C CNN
-	1    6400 1200
+P 6150 1650
+F 0 "U6" H 6150 1400 60  0000 C CNN
+F 1 "SHTC3" H 6150 1900 60  0000 C CNN
+F 2 "sensirion:SHTC1" H 6150 1650 60  0001 C CNN
+F 3 "" H 6150 1650 60  0001 C CNN
+	1    6150 1650
 	1    0    0    -1  
 $EndComp
 Text GLabel 3450 1800 0    60   Input ~ 0
@@ -1177,17 +1156,6 @@ Wire Wire Line
 	3500 1800 3450 1800
 Text Notes 3250 2050 0    60   ~ 0
 I²C Pull-Ups
-$Comp
-L backplane-rescue:SHT21 U3
-U 1 1 5AF38676
-P 6400 2000
-F 0 "U3" H 6400 1700 60  0000 C CNN
-F 1 "SHT21" H 6400 2300 60  0000 C CNN
-F 2 "sensirion:SHT21" H 6400 2000 60  0001 C CNN
-F 3 "" H 6400 2000 60  0001 C CNN
-	1    6400 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9200 3850 9450 3850
 Wire Wire Line
@@ -1217,9 +1185,9 @@ Wire Wire Line
 Wire Wire Line
 	2300 7400 2400 7400
 Wire Wire Line
-	6900 1100 7200 1100
+	6650 1550 6950 1550
 Wire Wire Line
-	5900 1100 5950 1100
+	5650 1550 5700 1550
 Wire Wire Line
 	9650 5750 9650 5800
 Wire Wire Line
