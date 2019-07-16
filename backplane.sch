@@ -317,17 +317,6 @@ F 3 "" H 7750 1150 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L backplane-rescue:C C2
-U 1 1 58A06EA9
-P 9450 1300
-F 0 "C2" H 9475 1400 50  0000 L CNN
-F 1 "C" H 9475 1200 50  0000 L CNN
-F 2 "capacitor-unmarked:CAP_UNMARKED" H 9488 1150 50  0001 C CNN
-F 3 "" H 9450 1300 50  0000 C CNN
-	1    9450 1300
-	-1   0    0    1   
-$EndComp
-$Comp
 L backplane-rescue:R R9
 U 1 1 58A8FA09
 P 10350 6200
@@ -1038,22 +1027,10 @@ Wire Wire Line
 Wire Wire Line
 	9150 1100 9200 1100
 Wire Wire Line
-	9150 1250 9250 1250
-Wire Wire Line
-	9250 1250 9250 1500
-Wire Wire Line
-	9450 1100 9450 1150
-Wire Wire Line
-	9450 1450 9450 1500
-Connection ~ 9450 1100
-Connection ~ 9450 1500
-Wire Wire Line
 	8100 1700 9700 1700
 Connection ~ 9700 1700
 Wire Wire Line
 	10200 1700 10100 1700
-Wire Wire Line
-	9250 1500 9450 1500
 Wire Wire Line
 	9700 2400 10400 2400
 Wire Wire Line
@@ -1193,10 +1170,6 @@ Wire Wire Line
 Wire Wire Line
 	9950 5450 10350 5450
 Wire Wire Line
-	9450 1100 9700 1100
-Wire Wire Line
-	9450 1500 9450 1800
-Wire Wire Line
 	9700 1700 9900 1700
 Wire Wire Line
 	10400 2400 10800 2400
@@ -1209,11 +1182,15 @@ Wire Wire Line
 Wire Wire Line
 	8200 1100 8250 1100
 Wire Wire Line
-	9200 1100 9450 1100
-Wire Wire Line
 	2850 2000 2850 2400
 Wire Wire Line
 	2850 2400 2850 2650
 Wire Wire Line
 	8200 950  8200 1100
+Wire Wire Line
+	9200 1100 9700 1100
+Wire Wire Line
+	9150 1250 9450 1250
+Wire Wire Line
+	9450 1250 9450 1800
 $EndSCHEMATC
