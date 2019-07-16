@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "iC880A RPi Backplane"
-Date "2018-05-10"
-Rev "v2.0"
+Date "2019-07-16"
+Rev "v2.1"
 Comp "Danilo Bargen / Coredump Rapperswil"
 Comment1 "Buy from https://shop.coredump.ch/"
 Comment2 ""
