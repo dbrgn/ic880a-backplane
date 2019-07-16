@@ -15,4 +15,5 @@
   (lib (name DO214)(type KiCad)(uri "$(KIPRJMOD)/DO-214.pretty")(options "")(descr ""))
   (lib (name StitchingVia)(type KiCad)(uri "$(KIPRJMOD)/StitchingVia.pretty")(options "")(descr ""))
   (lib (name buttons)(type KiCad)(uri "$(KIPRJMOD)/buttons.pretty")(options "")(descr ""))
+  (lib (name phoenix)(type KiCad)(uri "$(KIPRJMOD)/phoenix.pretty")(options "")(descr ""))
 )
