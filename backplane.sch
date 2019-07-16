@@ -1,42 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:backplane-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ic880a-spi
-LIBS:headers
-LIBS:raspi
-LIBS:sensirion
-LIBS:regulators
-LIBS:switches
+EESchema Schematic File Version 4
 LIBS:backplane-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -51,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L IC880A-SPI U2
+L backplane-rescue:IC880A-SPI U2
 U 2 1 5895DD0B
 P 4500 5050
 F 0 "U2" H 4500 4450 60  0000 C CNN
@@ -62,7 +26,7 @@ F 3 "" H 4500 5050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Raspi_2_3 U1
+L backplane-rescue:Raspi_2_3 U1
 U 1 1 5895DDA9
 P 2100 5800
 F 0 "U1" H 2800 4550 50  0000 C CNN
@@ -73,7 +37,7 @@ F 3 "" H 2150 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L IC880A-SPI U2
+L backplane-rescue:IC880A-SPI U2
 U 1 1 5895DF62
 P 5350 6600
 F 0 "U2" H 5350 6000 60  0000 C CNN
@@ -84,7 +48,7 @@ F 3 "" H 5350 6600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L I2C_HEADER J1
+L backplane-rescue:I2C_HEADER J1
 U 1 1 5895E94C
 P 5100 3300
 F 0 "J1" H 5100 2950 60  0000 C CNN
@@ -95,7 +59,7 @@ F 3 "" H 5100 3300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED_Small D3
+L backplane-rescue:LED_Small D3
 U 1 1 5895F6EA
 P 2300 2400
 F 0 "D3" H 2250 2525 50  0000 L CNN
@@ -106,7 +70,7 @@ F 3 "" V 2300 2400 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED_Small D2
+L backplane-rescue:LED_Small D2
 U 1 1 5895F75F
 P 2300 2000
 F 0 "D2" H 2250 2125 50  0000 L CNN
@@ -117,7 +81,7 @@ F 3 "" V 2300 2000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED_Small D1
+L backplane-rescue:LED_Small D1
 U 1 1 5895F789
 P 2300 1600
 F 0 "D1" H 2250 1725 50  0000 L CNN
@@ -145,7 +109,7 @@ NoConn ~ 3000 6300
 NoConn ~ 3000 5600
 NoConn ~ 3000 5100
 $Comp
-L R-RESCUE-backplane R3
+L backplane-rescue:R-RESCUE-backplane R3
 U 1 1 58964C66
 P 1700 2400
 F 0 "R3" V 1780 2400 50  0000 C CNN
@@ -156,7 +120,7 @@ F 3 "" H 1700 2400 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-RESCUE-backplane R2
+L backplane-rescue:R-RESCUE-backplane R2
 U 1 1 58965066
 P 1700 2000
 F 0 "R2" V 1780 2000 50  0000 C CNN
@@ -167,7 +131,7 @@ F 3 "" H 1700 2000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-RESCUE-backplane R1
+L backplane-rescue:R-RESCUE-backplane R1
 U 1 1 589650B2
 P 1700 1600
 F 0 "R1" V 1780 1600 50  0000 C CNN
@@ -178,7 +142,7 @@ F 3 "" H 1700 1600 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-backplane #PWR01
+L backplane-rescue:GND-RESCUE-backplane #PWR01
 U 1 1 5896BA26
 P 1650 7500
 F 0 "#PWR01" H 1650 7250 50  0001 C CNN
@@ -189,7 +153,7 @@ F 3 "" H 1650 7500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-backplane #PWR02
+L backplane-rescue:GND-RESCUE-backplane #PWR02
 U 1 1 589714DC
 P 6650 6150
 F 0 "#PWR02" H 6650 5900 50  0001 C CNN
@@ -200,7 +164,7 @@ F 3 "" H 6650 6150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-backplane #PWR03
+L backplane-rescue:GND-RESCUE-backplane #PWR03
 U 1 1 589715AD
 P 6000 7250
 F 0 "#PWR03" H 6000 7000 50  0001 C CNN
@@ -211,7 +175,7 @@ F 3 "" H 6000 7250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-backplane #PWR04
+L backplane-rescue:GND-RESCUE-backplane #PWR04
 U 1 1 589716C7
 P 4000 6250
 F 0 "#PWR04" H 4000 6000 50  0001 C CNN
@@ -224,7 +188,7 @@ $EndComp
 NoConn ~ 1700 7100
 NoConn ~ 5200 4800
 $Comp
-L IC880A-SPI U2
+L backplane-rescue:IC880A-SPI U2
 U 3 1 5898B4F6
 P 6200 5000
 F 0 "U2" H 6200 4400 60  0000 C CNN
@@ -235,7 +199,7 @@ F 3 "" H 6200 5000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L backplane-rescue:GND #PWR05
 U 1 1 5898B674
 P 6950 4800
 F 0 "#PWR05" H 6950 4800 30  0001 C CNN
@@ -248,7 +212,7 @@ $EndComp
 NoConn ~ 6900 4550
 NoConn ~ 6900 4650
 $Comp
-L C C1
+L backplane-rescue:C C1
 U 1 1 5898C4BA
 P 6400 700
 F 0 "C1" H 6400 800 40  0000 L CNN
@@ -260,7 +224,7 @@ F 4 "100nF" V 6250 700 60  0000 C CNN "C"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L backplane-rescue:R R4
 U 1 1 589B82C4
 P 3650 1550
 F 0 "R4" V 3730 1550 40  0000 C CNN
@@ -272,7 +236,7 @@ F 4 "10kΩ" V 3550 1550 60  0000 C CNN "R"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L backplane-rescue:R R5
 U 1 1 589B831C
 P 3650 1800
 F 0 "R5" V 3730 1800 40  0000 C CNN
@@ -284,7 +248,7 @@ F 4 "10kΩ" V 3550 1800 60  0000 C CNN "R"
 	0    1    1    0   
 $EndComp
 $Comp
-L I2C_HEADER J2
+L backplane-rescue:I2C_HEADER J2
 U 1 1 589B9888
 P 6400 3300
 F 0 "J2" H 6400 2950 60  0000 C CNN
@@ -295,7 +259,7 @@ F 3 "" H 6400 3300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_GSD Q4
+L backplane-rescue:Q_NMOS_GSD Q4
 U 1 1 589CAA83
 P 9750 6000
 F 0 "Q4" H 9950 6050 50  0000 L CNN
@@ -306,7 +270,7 @@ F 3 "" H 9750 6000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FAN J6
+L backplane-rescue:FAN J6
 U 1 1 589CB3DB
 P 9300 5500
 F 0 "J6" H 9300 5300 60  0000 C CNN
@@ -318,7 +282,7 @@ F 3 "" H 9300 5500 60  0001 C CNN
 $EndComp
 NoConn ~ 1200 6100
 $Comp
-L D D4
+L backplane-rescue:D D4
 U 1 1 589CC7B2
 P 9950 5600
 F 0 "D4" H 9950 5700 50  0000 C CNN
@@ -331,7 +295,7 @@ F 4 "Vishay SS14" H 9950 5600 60  0001 C CNN "Model"
 $EndComp
 NoConn ~ 1200 5400
 $Comp
-L MP1584_MODULE U4
+L backplane-rescue:MP1584_MODULE U4
 U 1 1 589F7FAA
 P 8700 1100
 F 0 "U4" H 9050 800 60  0000 C CNN
@@ -342,7 +306,7 @@ F 3 "" H 8700 1100 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L PWR_HEADER J5
+L backplane-rescue:PWR_HEADER J5
 U 1 1 589F8A2D
 P 7750 1150
 F 0 "J5" H 7750 950 60  0000 C CNN
@@ -353,7 +317,7 @@ F 3 "" H 7750 1150 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C2
+L backplane-rescue:C C2
 U 1 1 58A06EA9
 P 9450 1300
 F 0 "C2" H 9475 1400 50  0000 L CNN
@@ -364,7 +328,7 @@ F 3 "" H 9450 1300 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R9
+L backplane-rescue:R R9
 U 1 1 58A8FA09
 P 10350 6200
 F 0 "R9" V 10430 6200 50  0000 C CNN
@@ -376,7 +340,7 @@ F 4 "10kΩ" V 10250 6200 60  0000 C CNN "R"
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR06
+L backplane-rescue:GND #PWR06
 U 1 1 58A90AD5
 P 10600 6200
 F 0 "#PWR06" H 10600 5950 50  0001 C CNN
@@ -393,7 +357,7 @@ Text GLabel 10900 1700 2    60   Input ~ 0
 Text GLabel 5450 4600 2    60   Input ~ 0
 5V
 $Comp
-L GND #PWR07
+L backplane-rescue:GND #PWR07
 U 1 1 58F15EFB
 P 9650 6200
 F 0 "#PWR07" H 9650 5950 50  0001 C CNN
@@ -404,7 +368,7 @@ F 3 "" H 9650 6200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_HEADER J4
+L backplane-rescue:PWR_HEADER J4
 U 1 1 589627A5
 P 7750 1750
 F 0 "J4" H 7750 1550 60  0000 C CNN
@@ -419,7 +383,7 @@ FAN
 Text GLabel 1100 5300 0    60   Input ~ 0
 FAN
 $Comp
-L GND #PWR08
+L backplane-rescue:GND #PWR08
 U 1 1 58F17ECB
 P 5350 4700
 F 0 "#PWR08" H 5350 4450 50  0001 C CNN
@@ -432,7 +396,7 @@ $EndComp
 Text GLabel 1950 4250 2    60   Input ~ 0
 5V
 $Comp
-L PWR_FLAG #FLG09
+L backplane-rescue:PWR_FLAG #FLG09
 U 1 1 58F18E09
 P 5350 4600
 F 0 "#FLG09" H 5350 4695 50  0001 C CNN
@@ -477,7 +441,7 @@ Text GLabel 5700 3500 0    60   Input ~ 0
 Text GLabel 5750 3100 0    60   Input ~ 0
 SDA
 $Comp
-L GND #PWR010
+L backplane-rescue:GND #PWR010
 U 1 1 58F1F392
 P 5600 3250
 F 0 "#PWR010" H 5600 3000 50  0001 C CNN
@@ -496,7 +460,7 @@ Text GLabel 4700 3400 0    60   Input ~ 0
 Text GLabel 4450 3100 0    60   Input ~ 0
 SDA
 $Comp
-L GND #PWR011
+L backplane-rescue:GND #PWR011
 U 1 1 58F20596
 P 4300 3250
 F 0 "#PWR011" H 4300 3000 50  0001 C CNN
@@ -515,7 +479,7 @@ SDA
 Text GLabel 3850 1550 2    60   Input ~ 0
 3.3V
 $Comp
-L GND #PWR012
+L backplane-rescue:GND #PWR012
 U 1 1 58F2395B
 P 7200 1100
 F 0 "#PWR012" H 7200 850 50  0001 C CNN
@@ -548,7 +512,7 @@ LED2
 Text GLabel 1100 5650 0    60   Input ~ 0
 LED1
 $Comp
-L MCP3425A0T-E/CH-RESCUE-backplane U5
+L backplane-rescue:MCP3425A0T-E_CH-RESCUE-backplane U5
 U 1 1 58F1408D
 P 10050 3650
 F 0 "U5" H 9650 3950 50  0000 L CNN
@@ -559,7 +523,7 @@ F 3 "" H 10050 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L backplane-rescue:GND #PWR013
 U 1 1 58F1498B
 P 10050 4100
 F 0 "#PWR013" H 10050 3850 50  0001 C CNN
@@ -576,7 +540,7 @@ SDA
 Text GLabel 10050 3200 1    60   Input ~ 0
 3.3V
 $Comp
-L R R11
+L backplane-rescue:R R11
 U 1 1 58F15A4C
 P 8950 3650
 F 0 "R11" V 9030 3650 50  0000 C CNN
@@ -588,7 +552,7 @@ F 4 "3.6kΩ" V 8850 3650 60  0000 C CNN "R"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L backplane-rescue:R R10
 U 1 1 58F15AE0
 P 8950 3250
 F 0 "R10" V 9030 3250 50  0000 C CNN
@@ -600,7 +564,7 @@ F 4 "6.8kΩ" V 8850 3250 60  0000 C CNN "R"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R12
+L backplane-rescue:R R12
 U 1 1 58F15B81
 P 8950 4050
 F 0 "R12" V 9030 4050 50  0000 C CNN
@@ -612,7 +576,7 @@ F 4 "470Ω" V 8850 4050 60  0000 C CNN "R"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L backplane-rescue:GND #PWR014
 U 1 1 58F15D89
 P 8950 4300
 F 0 "#PWR014" H 8950 4050 50  0001 C CNN
@@ -625,7 +589,7 @@ $EndComp
 Text GLabel 8800 3050 0    60   Input ~ 0
 5V
 $Comp
-L C C3
+L backplane-rescue:C C3
 U 1 1 58F17903
 P 9200 3650
 F 0 "C3" H 9200 3750 40  0000 L CNN
@@ -665,7 +629,7 @@ Button
 Text Notes 7500 5900 0    60   ~ 0
 A simple button\nconnected to GPIO12.\nIt could be programmed\nto shut down the Rpi\non button press.\n\nNote that you need to\nenable the internal pull-up\nfor the button to work.
 $Comp
-L SW_Push SW1
+L backplane-rescue:SW_Push SW1
 U 1 1 58F31B3A
 P 8200 6200
 F 0 "SW1" H 8250 6300 50  0000 L CNN
@@ -680,7 +644,7 @@ BTN
 Text GLabel 7950 6200 0    60   Input ~ 0
 BTN
 $Comp
-L GND #PWR015
+L backplane-rescue:GND #PWR015
 U 1 1 58F33326
 P 8500 6250
 F 0 "#PWR015" H 8500 6000 50  0001 C CNN
@@ -693,7 +657,7 @@ $EndComp
 Text Notes 7500 2650 0    60   ~ 0
 Additionally, the parts are\nprotected against voltage spikes\nby a resettable fuse and a\nTVS diode, and against reverse\npolarity by a MOSFET.
 $Comp
-L D_Zener_Small D5
+L backplane-rescue:D_Zener_Small D5
 U 1 1 58F8FE37
 P 10800 2050
 F 0 "D5" H 10800 2140 50  0000 C CNN
@@ -705,7 +669,7 @@ F 4 "SMBJ5.0A-E3/5BGICT-ND" H 10800 2050 60  0001 C CNN "Digikey"
 	0    1    1    0   
 $EndComp
 $Comp
-L Polyfuse_Small F1
+L backplane-rescue:Polyfuse_Small F1
 U 1 1 58F913C4
 P 10000 1700
 F 0 "F1" V 9900 1700 50  0000 C CNN
@@ -717,7 +681,7 @@ F 4 "MF-MSMF250/16X-2CT-ND" V 10000 1700 60  0001 C CNN "Digikey"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D6
+L backplane-rescue:D D6
 U 1 1 58F9565C
 P 8700 700
 F 0 "D6" H 8550 650 50  0000 C CNN
@@ -729,7 +693,7 @@ F 4 "Vishay SS14" H 8700 700 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_PMOS_GSD Q5
+L backplane-rescue:Q_PMOS_GSD Q5
 U 1 1 58F98D63
 P 10400 1800
 F 0 "Q5" V 10300 1850 50  0000 L CNN
@@ -740,7 +704,7 @@ F 3 "" H 10400 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R13
+L backplane-rescue:R R13
 U 1 1 58F9A035
 P 10400 2150
 F 0 "R13" V 10480 2150 40  0000 C CNN
@@ -752,7 +716,7 @@ F 4 "10kΩ" V 10300 2150 60  0000 C CNN "R"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR016
+L backplane-rescue:GND #PWR016
 U 1 1 58FA03BA
 P 10950 2500
 F 0 "#PWR016" H 10950 2250 50  0001 C CNN
@@ -771,7 +735,7 @@ TX
 Text GLabel 3100 7500 0    60   Input ~ 0
 RX
 $Comp
-L SERIAL_HEADER J3
+L backplane-rescue:SERIAL_HEADER J3
 U 1 1 58961502
 P 3500 7400
 F 0 "J3" H 3500 7200 60  0000 C CNN
@@ -782,7 +746,7 @@ F 3 "" H 3550 7400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J7
+L backplane-rescue:Conn_01x01 J7
 U 1 1 59DD80A7
 P 4150 7500
 F 0 "J7" H 4150 7600 50  0000 C CNN
@@ -797,7 +761,7 @@ PPS
 Text GLabel 4350 7500 2    60   Input ~ 0
 PPS
 $Comp
-L GND #PWR017
+L backplane-rescue:GND #PWR017
 U 1 1 5A6018E8
 P 2850 2650
 F 0 "#PWR017" H 2850 2400 50  0001 C CNN
@@ -810,7 +774,7 @@ $EndComp
 Text GLabel 5900 2000 0    60   Input ~ 0
 3.3V
 $Comp
-L GND #PWR018
+L backplane-rescue:GND #PWR018
 U 1 1 5AF387E6
 P 7250 2000
 F 0 "#PWR018" H 7250 1750 50  0001 C CNN
@@ -849,7 +813,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 4350 2300 4350
 Wire Wire Line
-	2200 4350 2200 4500
+	2200 4350 2200 4450
 Connection ~ 9200 3850
 Wire Wire Line
 	9200 3800 9200 3850
@@ -858,22 +822,22 @@ Wire Wire Line
 	9200 3500 9200 3450
 Connection ~ 8950 3850
 Wire Wire Line
-	8950 3850 9450 3850
+	8950 3850 9200 3850
 Wire Wire Line
 	9450 3850 9450 3750
 Wire Wire Line
 	9450 3750 9550 3750
 Connection ~ 8950 3450
 Wire Wire Line
-	8950 3450 9450 3450
+	8950 3450 9200 3450
 Wire Wire Line
 	9450 3450 9450 3550
 Wire Wire Line
 	9450 3550 9550 3550
 Wire Wire Line
-	8950 3400 8950 3500
+	8950 3400 8950 3450
 Wire Wire Line
-	8950 3800 8950 3900
+	8950 3800 8950 3850
 Wire Wire Line
 	8950 4200 8950 4300
 Wire Wire Line
@@ -911,7 +875,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 6500 3000 6500
 Wire Wire Line
-	5850 1100 5950 1100
+	5850 1100 5900 1100
 Connection ~ 2200 4450
 Wire Wire Line
 	2300 4450 2300 4500
@@ -926,13 +890,13 @@ Wire Wire Line
 Wire Wire Line
 	3850 1800 3800 1800
 Wire Wire Line
-	6850 1100 7200 1100
+	6850 1100 6900 1100
 Wire Wire Line
 	3850 1550 3800 1550
 Wire Wire Line
 	1650 7400 1650 7500
 Wire Wire Line
-	1650 7400 2400 7400
+	1650 7400 1800 7400
 Connection ~ 1900 4450
 Wire Wire Line
 	2000 4450 1900 4450
@@ -994,12 +958,12 @@ Wire Wire Line
 	6150 6450 6050 6450
 Connection ~ 5350 4600
 Wire Wire Line
-	1900 4250 1900 4500
+	1900 4250 1900 4450
 Connection ~ 10050 6000
 Wire Wire Line
 	1100 5300 1200 5300
 Wire Wire Line
-	5200 4600 5450 4600
+	5200 4600 5350 4600
 Wire Wire Line
 	5350 4700 5200 4700
 Wire Wire Line
@@ -1057,19 +1021,19 @@ Wire Wire Line
 	5900 700  5900 1100
 Connection ~ 5900 1100
 Wire Wire Line
-	9650 5550 9650 5800
+	9650 5550 9650 5750
 Wire Wire Line
 	9650 5750 9950 5750
 Connection ~ 9650 5750
 Connection ~ 9950 5450
 Wire Wire Line
-	9650 5450 10350 5450
+	9650 5450 9950 5450
 Wire Wire Line
 	10050 6200 10200 6200
 Wire Wire Line
 	10500 6200 10600 6200
 Wire Wire Line
-	10050 5900 10050 6200
+	10050 5900 10050 6000
 Wire Wire Line
 	9950 6000 10050 6000
 Wire Wire Line
@@ -1085,13 +1049,13 @@ Wire Wire Line
 Wire Wire Line
 	8500 6200 8500 6250
 Wire Wire Line
-	8100 1100 8250 1100
+	8100 1100 8200 1100
 Wire Wire Line
 	8200 700  8550 700 
 Wire Wire Line
 	8850 700  9200 700 
 Wire Wire Line
-	9150 1100 9700 1100
+	9150 1100 9200 1100
 Wire Wire Line
 	9150 1250 9250 1250
 Wire Wire Line
@@ -1099,22 +1063,22 @@ Wire Wire Line
 Wire Wire Line
 	9450 1100 9450 1150
 Wire Wire Line
-	9450 1450 9450 1800
+	9450 1450 9450 1500
 Connection ~ 9450 1100
 Connection ~ 9450 1500
 Wire Wire Line
-	8100 1700 9900 1700
+	8100 1700 9700 1700
 Connection ~ 9700 1700
 Wire Wire Line
 	10200 1700 10100 1700
 Wire Wire Line
 	9250 1500 9450 1500
 Wire Wire Line
-	9700 2400 10950 2400
+	9700 2400 10400 2400
 Wire Wire Line
 	10400 2400 10400 2300
 Wire Wire Line
-	10600 1700 10900 1700
+	10600 1700 10800 1700
 Wire Wire Line
 	10800 1700 10800 1950
 Wire Wire Line
@@ -1127,7 +1091,7 @@ Wire Notes Line
 Wire Notes Line
 	7400 2800 11200 2800
 Wire Wire Line
-	8100 1800 9700 1800
+	8100 1800 9450 1800
 Wire Wire Line
 	9700 1800 9700 2400
 Wire Wire Line
@@ -1136,7 +1100,7 @@ Wire Wire Line
 	10950 2400 10950 2500
 Connection ~ 9450 1800
 Wire Wire Line
-	8200 700  8200 1100
+	8200 700  8200 950 
 Connection ~ 8200 1100
 Wire Wire Line
 	9200 700  9200 1100
@@ -1178,7 +1142,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 1600 2200 1600
 Wire Wire Line
-	2850 1600 2850 2650
+	2850 1600 2850 2000
 Connection ~ 2850 2000
 Connection ~ 2850 2400
 Wire Wire Line
@@ -1193,7 +1157,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 2000 7250 2000
 $Comp
-L SHTC3 U6
+L backplane-rescue:SHTC3 U6
 U 1 1 5AF37D64
 P 6400 1200
 F 0 "U6" H 6400 950 60  0000 C CNN
@@ -1214,7 +1178,7 @@ Wire Wire Line
 Text Notes 3250 2050 0    60   ~ 0
 I²C Pull-Ups
 $Comp
-L SHT21 U3
+L backplane-rescue:SHT21 U3
 U 1 1 5AF38676
 P 6400 2000
 F 0 "U3" H 6400 1700 60  0000 C CNN
@@ -1224,4 +1188,64 @@ F 3 "" H 6400 2000 60  0001 C CNN
 	1    6400 2000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9200 3850 9450 3850
+Wire Wire Line
+	9200 3450 9450 3450
+Wire Wire Line
+	8950 3850 8950 3900
+Wire Wire Line
+	8950 3450 8950 3500
+Wire Wire Line
+	2200 4450 2200 4500
+Wire Wire Line
+	1900 4450 1900 4500
+Wire Wire Line
+	5350 4600 5450 4600
+Wire Wire Line
+	10050 6000 10050 6200
+Wire Wire Line
+	1800 7400 1900 7400
+Wire Wire Line
+	1900 7400 2000 7400
+Wire Wire Line
+	2000 7400 2100 7400
+Wire Wire Line
+	2100 7400 2200 7400
+Wire Wire Line
+	2200 7400 2300 7400
+Wire Wire Line
+	2300 7400 2400 7400
+Wire Wire Line
+	6900 1100 7200 1100
+Wire Wire Line
+	5900 1100 5950 1100
+Wire Wire Line
+	9650 5750 9650 5800
+Wire Wire Line
+	9950 5450 10350 5450
+Wire Wire Line
+	9450 1100 9700 1100
+Wire Wire Line
+	9450 1500 9450 1800
+Wire Wire Line
+	9700 1700 9900 1700
+Wire Wire Line
+	10400 2400 10800 2400
+Wire Wire Line
+	10800 2400 10950 2400
+Wire Wire Line
+	10800 1700 10900 1700
+Wire Wire Line
+	9450 1800 9700 1800
+Wire Wire Line
+	8200 1100 8250 1100
+Wire Wire Line
+	9200 1100 9450 1100
+Wire Wire Line
+	2850 2000 2850 2400
+Wire Wire Line
+	2850 2400 2850 2650
+Wire Wire Line
+	8200 950  8200 1100
 $EndSCHEMATC
