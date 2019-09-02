@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:backplane-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1045,8 +1045,6 @@ Connection ~ 10400 2400
 Connection ~ 10800 2400
 Connection ~ 10800 1700
 Wire Notes Line
-	2500 2450 7400 2450
-Wire Notes Line
 	7400 2800 11200 2800
 Wire Wire Line
 	8100 1800 9450 1800
@@ -1193,4 +1191,6 @@ Wire Wire Line
 	9150 1250 9450 1250
 Wire Wire Line
 	9450 1250 9450 1800
+Wire Notes Line
+	3050 2400 7400 2400
 $EndSCHEMATC
